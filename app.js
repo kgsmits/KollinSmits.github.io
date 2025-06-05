@@ -1,47 +1,158 @@
 const routes = {
   "/": () => `
-    <div class="page">
-      <div class="sidePanel">
+   <div class="page">
+    <div class="sidePanel">
         <div class="LeftPanel">
-          <img src="Content/images/black.png" />
-          <hr />
-          <h4 class="profile-content__category-title">Get in touch!</h4>
-          <div class="links">
-            <a href="https://nl.linkedin.com/in/kollin-smits-947830294" target="_blank" rel="noopener noreferrer">
-              <img class="linkimage" src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn">
-            </a>
-            <a href="mailto:kol.smits@hotmail.com">
-              <img class="linkimage" src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email">
-            </a>
-             <a href="https://github.com/kgsmits" target="_blank" rel="noopener noreferrer">
-              <img class="linkimage github-white" src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub">
-            </a>
-          </div>
-          <hr />
-          <section class="personalia">
-            <div class="profile-content__category">
-              <h3 style="color:white; text-transform: lowercase;">Skills</h3>
+            <img src="Content/images/black.png" />
+            <hr />
+            <h4 class="profile-content__category-title">Get in touch!</h4>
+            <div class="links">
+                <a href="https://nl.linkedin.com/in/kollin-smits-947830294" target="_blank" rel="noopener noreferrer">
+                    <img class="linkimage" src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn">
+                </a>
+                <a href="mailto:kol.smits@hotmail.com">
+                    <img class="linkimage" src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email">
+                </a>
             </div>
-            <div class="custom-line--skinny"></div>
-            <!-- Hier komen al je skill blokken, ik laat die onveranderd -->
-            ...
-          </section>
+
+            <hr />
+            <section class="personalia">
+                <div class="profile-content__category">
+                    <h3 style="color:white; text-transform: lowercase;">Skills</h3>
+                </div>
+                <div class="custom-line--skinny"></div>
+
+                <div class="profile-content__element">
+                    <div class="profile-content__element-header">
+                        <h4 class="profile-content__title">Hard skills </h4>
+                    </div>
+
+                    <div class="profile-content__element-header">
+                        <div class="profile-content__skills">Svelte </div>
+                        <div class="profile-content__period">since 2025</div>
+                    </div>
+                    <div class="skillbar_container" skill-level="Beginner">
+                        <div class="skillbar skillbar_percentage beginner"></div>
+                    </div>
+
+                    <div class="profile-content__element-header">
+                        <div class="profile-content__skills">Javascript </div>
+                        <div class="profile-content__period">since 2023</div>
+                    </div>
+                    <div class="skillbar_container" skill-level="Good">
+                        <div class="skillbar skillbar_percentage good"></div>
+                    </div>
+
+                    <div class="profile-content__element-header">
+                        <div class="profile-content__skills">Typescript </div>
+                        <div class="profile-content__period">since 2025</div>
+                    </div>
+                    <div class="skillbar_container" skill-level="Beginner">
+                        <div class="skillbar skillbar_percentage beginner"></div>
+                    </div>
+
+                    <div class="profile-content__element-header">
+                        <div class="profile-content__skills">C++</div>
+                        <div class="profile-content__period">since 2024</div>
+                    </div>
+                    <div class="skillbar_container" skill-level="Beginner">
+                        <div class="skillbar skillbar_percentage beginner"></div>
+                    </div>
+
+                    <div class="profile-content__element-header">
+                        <div class="profile-content__skills">PHP</div>
+                        <div class="profile-content__period">since 2023</div>
+                    </div>
+                    <div class="skillbar_container" skill-level="Beginner">
+                        <div class="skillbar skillbar_percentage beginner"></div>
+                    </div>
+
+                    <div class="profile-content__element-header">
+                        <div class="profile-content__skills">Java </div>
+                        <div class="profile-content__period">since 2023</div>
+                    </div>
+                    <div class="skillbar_container" skill-level="Average">
+                        <div class="skillbar skillbar_percentage average"></div>
+                    </div>
+
+                    <div class="profile-content__element-header">
+                        <div class="profile-content__skills">C# </div>
+                        <div class="profile-content__period">since 2024</div>
+                    </div>
+                    <div class="skillbar_container" skill-level="Good">
+                        <div class="skillbar skillbar_percentage good"></div>
+                    </div>
+
+                    <div class="profile-content__element-header">
+                        <div class="profile-content__skills">Scrum</div>
+                        <div class="profile-content__period">since 2023</div>
+                    </div>
+                    <div class="skillbar_container" skill-level="Good">
+                        <div class="skillbar skillbar_percentage good"></div>
+                    </div>
+
+                    <div class="profile-content__element-header">
+                        <div class="profile-content__skills">CSS </div>
+                        <div class="profile-content__period">since 2023</div>
+                    </div>
+                    <div class="skillbar_container" skill-level="Good">
+                        <div class="skillbar skillbar_percentage good"></div>
+                    </div>
+
+                    <div class="profile-content__element-header">
+                        <div class="profile-content__skills">HTML </div>
+                        <div class="profile-content__period">since 2023</div>
+                    </div>
+                    <div class="skillbar_container" skill-level="Good">
+                        <div class="skillbar skillbar_percentage good"></div>
+                    </div>
+
+                    <div class="profile-content__element-header">
+                        <div class="profile-content__skills">GIT </div>
+                        <div class="profile-content__period">since 2023</div>
+                    </div>
+                    <div class="skillbar_container" skill-level="Good">
+                        <div class="skillbar skillbar_percentage good"></div>
+                    </div>
+
+                </div>
+
+                <div class="profile-content__element">
+                    <div class="profile-content__element-header">
+                        <h4 class="profile-content__title">Soft skills </h4>
+                    </div>
+                    <ul class="profile-content__skills">
+                        <li>Communication</li>
+                        <li>Agile workstyle</li>
+                        <li>Time management</li>
+                        <li>Decision making</li>
+                    </ul>
+                </div>
+
+            </section>
         </div>
-      </div>
-      <div class="sidePanel">
-        <section>
-          <div class="divtext">
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-            when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-            It has survived not only five centuries, but also the leap into electronic typesetting,
-            remaining essentially unchanged...
-          </div>
-        </section>
-      </div>
     </div>
+    <div class="sidePanel">
+        <section>
+            <div class="divtext">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                It has survived not only five centuries, but also the leap into electronic typesetting,
+                remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset s
+                heets containing Lorem Ipsum passages, and more recently with desktop publishing software l
+                ike Aldus PageMaker including versions of Lorem Ipsum.
+            </div>
+
+        </section>
+    </div>
+</div>
   `,
-  "/Experience": () => `<div class="Experiencepage">
+  "/Experience": () => `
+  <div class="text-center">
+  <h3>My Experience</h3>
+  </div>
+  <div class="Experiencepage">
     <div class="timeline">
         <div class="timeline-item left">
             <div class="timeline-dot"></div>
@@ -50,7 +161,7 @@ const routes = {
                 <p style="font-weight: bold;">web development internship <span style="font-weight:normal;">Djurve</span></p>
             </div>
         </div>
-        <div class="timeline-item right">
+        <div class="timeline-item right" >
             <div class="timeline-dot"></div>
             <div class="timeline-content">
                 <h3 class="timelineheader">2018</h3> <span>- until 2010</span>
