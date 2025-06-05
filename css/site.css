@@ -1,0 +1,176 @@
+:root {
+    --color-background: #0D1117;
+    --color-text: #C9D1D9;
+    --color-accent: #58A6FF;
+}
+
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    color: var(--color-text);
+}
+
+.navlink {
+    color: var(--color-text) !important;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+    .navlink:hover {
+        color: var(--color-accent) !important;
+        text-decoration: none;
+    }
+
+    .navlink.active {
+        color: var(--color-accent) !important;
+        font-weight: bold;
+    }
+
+ul {
+    gap: 20px;
+}
+
+body {
+    background-color: var(--color-background);
+    color: var(--color-text);
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    padding: 1rem;
+    text-align: center;
+    background-color: black;
+    color: var(--color-text);
+}
+
+.footer-div {
+    display: flex;
+    color: black;
+    color: var(--color-text);
+    justify-content: center;
+}
+
+nav, footer {
+    display: flex;
+    background-color: #161B22;
+    color: var(--color-text);
+}
+
+h1, h2, h3 {
+    color: var(--color-accent);
+    text-transform: uppercase;
+}
+
+label, h4, h5, h6 {
+    color: var(--color-accent);
+}
+
+p {
+    color: var(--color-text);
+}
+
+img {
+    height: 230px;
+    border-radius: 50%;
+    margin: 30px;
+}
+.linkimage {
+    width: 42px;
+    height: 42px;
+    margin: 0px;
+    border-radius: 0%;
+}
+
+button {
+    background-color: var(--color-accent);
+    color: var(--color-background);
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+@media (min-width: 768px) {
+    .page {
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+    }
+}
+
+.divtext {
+    align-content: center;
+    padding: 0.5rem;
+    border: 2px solid grey;
+    border-radius: 15px;
+    font-size: 14px;
+    color: white;
+}
+
+.sidePanel {
+    max-width: 450px;
+}
+
+.LeftPanel {
+    align-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    border: 2px solid grey;
+    border-radius: 15px;
+    font-size: 14px;
+    width: 350px;
+}
+
+hr {
+    border: none;
+    border-top: 3px solid lightgrey;
+    margin: 1rem 0;
+    width: 100%;
+}
+
+span {
+    font-size: 11px;
+}
+.links {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    align-items: center; 
+    justify-content: center; 
+}

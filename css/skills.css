@@ -1,0 +1,191 @@
+:root {
+    --accent-color: #58A6FF;
+    --secondary-color: #20202A; /* donkerder blauw secundaire kleur */
+    --text-color: white;
+    --beginner: 20%;
+    --average: 40%;
+    --good: 60%;
+    --intermediate: 80%;
+    --expert: 100%;
+}
+
+.personalia {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skillbar_container {
+    position: relative;
+    height: 10px;
+    width: 100%;
+    background-color: #191923;
+    border-radius: 15px;
+    margin-bottom: 25px;
+}
+
+.skillbar {
+    height: 100%;
+    border-radius: 15px;
+    background-color: var(--accent-color);
+    position: relative;
+}
+
+.skillbar_container::after {
+    content: attr(skill-level);
+    position: absolute;
+    top: -40px;
+    right: 0px;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.skillbar_percentage.beginner {
+    --percentage: var(--beginner);
+}
+
+.skillbar_percentage.average {
+    --percentage: var(--average);
+}
+
+.skillbar_percentage.good{
+    --percentage: var(--good);
+}
+
+.skillbar_percentage.intermediate {
+    --percentage: var(--intermediate);
+}
+
+.skillbar_percentage.expert {
+    --percentage: var(--expert);
+}
+
+.skillbar_percentage {
+    width: 0%;
+    animation: skillbaranimation 3s forwards;
+}
+
+@keyframes skillbaranimation {
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: var(--percentage);
+    }
+}
+
+.profile-content__description {
+    margin: 0px 15px 0px 15px;
+}
+
+.profile_content__skills {
+    color: white;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 14px;
+    align-items: flex-end;
+}
+
+.profile-content__category-title {
+    color: var(--text-color);
+    align-items: center;
+}
+
+.profile-content__title {
+    color: var(--text-color);
+    font-weight: bold;
+}
+
+.profile-content__category--hidden-mobile {
+    display: flex;
+}
+
+.profile-content__element {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 95%;
+    margin: 0px;
+    color: var(--text-color);
+}
+
+.profile-content__element--hidden-mobile {
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-content__title {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 2px;
+    margin-top: 6px;
+}
+
+.profile-content__period {
+    margin-left: auto;
+    text-align: right;
+    color: var(--text-color);
+}
+
+.profile-content__institute {
+    color: var(--accent-color);
+    margin-top: 0px;
+    font-size: 14px;
+}
+
+@media only screen and (min-width: 800px) {
+    .skills {
+        width: 49.7%;
+    }
+
+    .page {
+        flex-direction: row;
+    }
+
+    .profile-content__institute {
+        font-size: 14px;
+    }
+
+    .profile-content__title {
+        font-size: 18px;
+    }
+
+    .profile_content__skills {
+        font-size: 14px;
+    }
+
+    .person-name {
+        order: -1;
+    }
+
+    .profile-content__category--hidden-mobile {
+        display: flex;
+        flex-direction: column;
+    }
+
+        .profile-content__category--hidden-mobile hr {
+            width: 100%;
+            color: grey;
+        }
+
+    .profile-content__element--hidden-mobile {
+        display: flex;
+    }
+
+    .profile-content__element-header {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin-bottom: 0px;
+        color: var(--text-color);
+    }
+
+    .profile-content__period {
+        font-size: 12px;
+        color: var(--text-color);
+        display: flex;
+    }
+}
