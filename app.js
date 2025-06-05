@@ -3,7 +3,7 @@ const routes = {
     <div class="page">
       <div class="sidePanel">
         <div class="LeftPanel">
-          <img src="Content/black.png" />
+          <img src="Content/images/black.png" />
           <hr />
           <h4 class="profile-content__category-title">Get in touch!</h4>
           <div class="links">
@@ -12,6 +12,9 @@ const routes = {
             </a>
             <a href="mailto:kol.smits@hotmail.com">
               <img class="linkimage" src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email">
+            </a>
+             <a href="https://github.com/kgsmits" target="_blank" rel="noopener noreferrer">
+              <img class="linkimage github-white" src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub">
             </a>
           </div>
           <hr />

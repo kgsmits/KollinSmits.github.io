@@ -110,6 +110,9 @@ img {
     margin: 0px;
     border-radius: 0%;
 }
+.linkimage.github-white {
+  filter: invert(100%) brightness(200%);
+}
 
 button {
     background-color: var(--color-accent);
