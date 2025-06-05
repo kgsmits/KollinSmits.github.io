@@ -145,6 +145,19 @@ const routes = {
             </div>
 
         </section>
+        <section>
+            <div class="divtext">
+            <h3 class="text-center">My projects</h3>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                It has survived not only five centuries, but also the leap into electronic typesetting,
+                remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset s
+                heets containing Lorem Ipsum passages, and more recently with desktop publishing software l
+                ike Aldus PageMaker including versions of Lorem Ipsum.
+            </div>
+
+        </section>
     </div>
 </div>
   `,
@@ -158,28 +171,34 @@ const routes = {
             <div class="timeline-dot"></div>
             <div class="timeline-content">
                 <h3 class="timelineheader">2025</h3> <span>april - june</span>
-                <p style="font-weight: bold;">web development internship <span style="font-weight:normal;">Djurve</span></p>
+                <p style="font-weight: bold;">web development internship</p>
+                <span class="companyspan" >Djurve</span>
             </div>
         </div>
         <div class="timeline-item right" >
             <div class="timeline-dot"></div>
             <div class="timeline-content">
                 <h3 class="timelineheader">2018</h3> <span>- until 2010</span>
-                <p style="font-weight: bold;">Restaurant staff <span style="font-weight:normal;">Ko Shing</span></p>
+                <p style="font-weight: bold;">Restaurant staff </p>
+                <span class="companyspan" >Ko Shing</span>
             </div>
         </div>
         <div class="timeline-item left">
             <div class="timeline-dot"></div>
             <div class="timeline-content">
                 <h3 class="timelineheader">2022</h3> <span>- until present</span>
-                <p style="font-weight: bold;">bread department <span style="font-weight:normal;">Jumbo</span></p>
+                <p style="font-weight: bold;">bread department</p>
+                <span class="companyspan" >Jumbo</span>
+
             </div>
         </div>
         <div class="timeline-item right">
             <div class="timeline-dot"></div>
             <div class="timeline-content">
                 <h3 class="timelineheader">2018</h3> <span>- until 2010</span>
-                <p style="font-weight: bold;">Warehouse employee <span style="font-weight:normal;">DA</span></p>
+                <p style="font-weight: bold;">Warehouse employee </p>
+                <span class="companyspan" >DA</span>
+
             </div>
         </div>
 

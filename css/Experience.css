@@ -209,3 +209,9 @@
         top: -10px;
     }
 }
+
+.companyspan{
+    font-weight:normal;
+    top: -20px;
+    position: relative;
+}

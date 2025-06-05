@@ -137,10 +137,11 @@ button {
 .divtext {
     align-content: center;
     padding: 0.5rem;
-    border: 2px solid grey;
+    border: 1px solid grey;
     border-radius: 15px;
     font-size: 14px;
     color: white;
+    margin-bottom: 10px;
 }
 
 .sidePanel {
@@ -153,7 +154,7 @@ button {
     display: flex;
     flex-direction: column;
     padding: 0.5rem;
-    border: 2px solid grey;
+    border: 1px solid grey;
     border-radius: 15px;
     font-size: 14px;
     width: 350px;
