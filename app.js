@@ -1,3 +1,5 @@
+const mijnLeeftijd = berekenLeeftijd('2005-02-28');
+
 const routes = {
   "/": () => `
    <div class="page">
@@ -6,12 +8,15 @@ const routes = {
             <img src="Content/images/black.png" />
             <hr />
             <h4 class="profile-content__category-title">Get in touch!</h4>
-            <div class="links">
+          <div class="links">
                 <a href="https://nl.linkedin.com/in/kollin-smits-947830294" target="_blank" rel="noopener noreferrer">
-                    <img class="linkimage" src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn">
+                    <img class="linkimage" src="Content/images/linkedin.png" alt="LinkedIn">
                 </a>
                 <a href="mailto:kol.smits@hotmail.com">
-                    <img class="linkimage" src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email">
+                    <img class="linkimage" src="Content/images/email.png" alt="Email">
+                </a>
+                <a href="https://github.com/kgsmits">
+                    <img class="linkimage" src="Content/images/github.png" alt="Github">
                 </a>
             </div>
 
@@ -191,20 +196,32 @@ const routes = {
             <h4 class="profile-content__category-title">Get in touch!</h4>
             <div class="links">
                 <a href="https://nl.linkedin.com/in/kollin-smits-947830294" target="_blank" rel="noopener noreferrer">
-                    <img class="linkimage" src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn">
+                    <img class="linkimage" src="Content/images/linkedin.png" alt="LinkedIn">
                 </a>
                 <a href="mailto:kol.smits@hotmail.com">
-                    <img class="linkimage" src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email">
+                    <img class="linkimage" src="Content/images/email.png" alt="Email">
+                </a>
+                <a href="https://github.com/kgsmits">
+                    <img class="linkimage" src="Content/images/github.png" alt="Github">
                 </a>
             </div>
-
             <hr />
-  
+            <div class="profile-content__element">
+                    <div class="profile-content__element-header">
+                        <h4 class="profile-content__title">about me </h4>
+                    </div>
+                    <ul class="profile-content__skills">
+                        <li>Age: ${mijnLeeftijd} </li>
+                        <li>Location: Zwolle, Netherlands</li>
+                        <li>Education: Software Engineering at <a href="https://www.windesheim.nl" target="_blank">Windesheim</a></li>
+                    </ul>
+                </div>
         </div>
     </div>
+    
+    
     <div class="ExperiencesidePanel text-center">
   <h3>My Experience</h3>
-
   <div class="Experiencepage text-center">
     <div class="timeline">
         <div class="timeline-item left">
@@ -258,6 +275,21 @@ function router() {
   const render = routes[path] || (() => "<h1>404</h1><p>Pagina niet gevonden</p>");
   document.getElementById("body").innerHTML = render();
 }
+
+function berekenLeeftijd(geboortedatum) {
+  const vandaag = new Date();
+  const geboorte = new Date(geboortedatum);
+  
+  let leeftijd = vandaag.getFullYear() - geboorte.getFullYear();
+  const maandVerschil = vandaag.getMonth() - geboorte.getMonth();
+  
+  if (maandVerschil < 0 || (maandVerschil === 0 && vandaag.getDate() < geboorte.getDate())) {
+    leeftijd--;
+  }
+  
+  return leeftijd;
+}
+
 
 window.addEventListener("hashchange", router);
 window.addEventListener("DOMContentLoaded", router);
