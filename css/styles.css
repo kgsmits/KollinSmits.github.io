@@ -1,0 +1,10 @@
+:root{
+    --color-background: #252424; /*achtergrond*/
+    --color-accentGrey: #70798c; /*randen, secondary text*/
+    --color-accentBlue: #00a8e8; /*hover, links, buttons*/
+    --color-accentDarkBlue: #003459; /*titels, text highlights*/
+    --color-accentGreenBlue: #007ea7; /*subaccent, iconen, subtiele highlights*/
+    --color-accentgreen: #3bc14a; /*succes bevestigingen*/
+    --color-accentDarkerGreen: #4da167; 
+    --color-text: #C9D1D9;
+}

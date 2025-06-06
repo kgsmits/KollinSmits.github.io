@@ -1,12 +1,24 @@
 :root {
-    --accent-color: #58A6FF;
-    --secondary-color: #20202A; /* donkerder blauw secundaire kleur */
-    --text-color: white;
+    /* --accent-color: #58A6FF;
+    --secondary-color: #20202A;
+    --text-color: white; */
     --beginner: 20%;
     --average: 40%;
     --good: 60%;
     --intermediate: 80%;
     --expert: 100%;
+}
+:root{
+    --color-background: #252424; /*achtergrond*/
+    --color-accentGrey: #70798c; /*randen, secondary text*/
+    --color-accentBlue: #00a8e8; /*hover, links, buttons*/
+    --color-accentDarkBlue: #003459; /*titels, text highlights*/
+    --color-accentGreenBlue: #007ea7; /*subaccent, iconen, subtiele highlights*/
+    --color-accentgreen: #3bc14a; /*succes bevestigingen*/
+    --color-accentDarkerGreen: #4da167; 
+    /* --color-text: #C9D1D9; */
+        --color-text: #ffffff;
+
 }
 
 .personalia {
@@ -28,7 +40,7 @@
 .skillbar {
     height: 100%;
     border-radius: 15px;
-    background-color: var(--accent-color);
+    background-color: var(--color-accentBlue);
     position: relative;
 }
 
@@ -131,7 +143,7 @@
 }
 
 .profile-content__institute {
-    color: var(--accent-color);
+    color: var(--color-accentBlue);
     margin-top: 0px;
     font-size: 14px;
 }
@@ -188,4 +200,46 @@
         color: var(--text-color);
         display: flex;
     }
+}
+
+.tooltip-container {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip-target {
+  cursor: pointer;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+}
+.tooltip-target:hover svg {
+  fill: var(--color-accentBlue);
+  
+}
+
+.tooltip-box {
+  visibility: hidden;
+  opacity: 0;
+  background-color: #333;
+  color: #fff;
+  text-align: left;
+  border-radius: 8px;
+  padding: 10px;
+  position: absolute;
+  top: 130%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 250px;
+  z-index: 10;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: opacity 0.3s ease;
+}
+
+.tooltip-container:hover .tooltip-box {
+  visibility: visible;
+  opacity: 1;
 }
