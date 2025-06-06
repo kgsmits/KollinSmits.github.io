@@ -6,5 +6,11 @@
     --color-accentGreenBlue: #007ea7; /*subaccent, iconen, subtiele highlights*/
     --color-accentgreen: #3bc14a; /*succes bevestigingen*/
     --color-accentDarkerGreen: #4da167; 
-    --color-text: #C9D1D9;
+    --color-text: #ffffff;
+    --beginner: 20%;
+    --average: 40%;
+    --good: 60%;
+    --intermediate: 80%;
+    --expert: 100%;
+
 }

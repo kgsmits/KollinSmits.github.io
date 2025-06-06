@@ -160,7 +160,7 @@ const routes = {
         <section>
             <div class="divtext">
             Hi! I'm Kollin Smits,
-                a passionate and ambitious software engineering student at <a href="https://www.windesheim.nl" target="_blank">Windesheim Zwolle</a>, currently pursuing a degree in software development. I’m driven by curiosity, eager to learn, and always looking for new challenges that help me grow both personally and professionally.
+                a passionate and ambitious software engineering student at <a href="https://www.windesheim.nl" target="_blank">Windesheim Zwolle</a>, currently pursuing a degree in software development. I am driven by curiosity, eager to learn, and always looking for new challenges that help me grow both personally and professionally.
                 With a strong interest in development, I continuously work on projects to improve my skills and explore new technologies. On this website, you'll find an overview of my journey so far—ranging from academic assignments to personal projects and everything in between.
                 Feel free to take a look around and get in touch if you'd like to connect!        
             </div>
@@ -183,10 +183,29 @@ const routes = {
 </div>
   `,
   "/Experience": () => `
-  <div class="text-center">
+   <div class="page" style="gap: 137px;">
+    <div class="sidePanel">
+        <div class="LeftPanel">
+            <img src="Content/images/black.png" />
+            <hr />
+            <h4 class="profile-content__category-title">Get in touch!</h4>
+            <div class="links">
+                <a href="https://nl.linkedin.com/in/kollin-smits-947830294" target="_blank" rel="noopener noreferrer">
+                    <img class="linkimage" src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn">
+                </a>
+                <a href="mailto:kol.smits@hotmail.com">
+                    <img class="linkimage" src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email">
+                </a>
+            </div>
+
+            <hr />
+  
+        </div>
+    </div>
+    <div class="ExperiencesidePanel text-center">
   <h3>My Experience</h3>
-  </div>
-  <div class="Experiencepage">
+
+  <div class="Experiencepage text-center">
     <div class="timeline">
         <div class="timeline-item left">
             <div class="timeline-dot"></div>
@@ -199,7 +218,7 @@ const routes = {
         <div class="timeline-item right" >
             <div class="timeline-dot"></div>
             <div class="timeline-content">
-                <h3 class="timelineheader">2018</h3> <span>- until 2010</span>
+                <h3 class="timelineheader">2022</h3> <span>- until present</span>
                 <p style="font-weight: bold;">Restaurant staff </p>
                 <span class="companyspan" >Ko Shing</span>
             </div>
@@ -207,7 +226,7 @@ const routes = {
         <div class="timeline-item left">
             <div class="timeline-dot"></div>
             <div class="timeline-content">
-                <h3 class="timelineheader">2022</h3> <span>- until present</span>
+                <h3 class="timelineheader">2022</h3> <span>feb - sept</span>
                 <p style="font-weight: bold;">bread department</p>
                 <span class="companyspan" >Jumbo</span>
 
@@ -216,17 +235,17 @@ const routes = {
         <div class="timeline-item right">
             <div class="timeline-dot"></div>
             <div class="timeline-content">
-                <h3 class="timelineheader">2018</h3> <span>- until 2010</span>
+                <h3 class="timelineheader">2020</h3> <span>- until 2021</span>
                 <p style="font-weight: bold;">Warehouse employee </p>
                 <span class="companyspan" >DA</span>
 
             </div>
         </div>
-
     </div>
 </div>
-
-`,
+    </div>
+</div>
+ `,
   "/Privacy": () => `<div class="text-center">
     <h1 class="display-4">Welcome</h1>
     <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>

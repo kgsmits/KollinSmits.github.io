@@ -1,13 +1,3 @@
-:root {
-    /* --accent-color: #58A6FF;
-    --secondary-color: #20202A;
-    --text-color: white; */
-    --beginner: 20%;
-    --average: 40%;
-    --good: 60%;
-    --intermediate: 80%;
-    --expert: 100%;
-}
 :root{
     --color-background: #252424; /*achtergrond*/
     --color-accentGrey: #70798c; /*randen, secondary text*/
@@ -16,8 +6,12 @@
     --color-accentGreenBlue: #007ea7; /*subaccent, iconen, subtiele highlights*/
     --color-accentgreen: #3bc14a; /*succes bevestigingen*/
     --color-accentDarkerGreen: #4da167; 
-    /* --color-text: #C9D1D9; */
-        --color-text: #ffffff;
+    --color-text: #ffffff;
+    --beginner: 20%;
+    --average: 40%;
+    --good: 60%;
+    --intermediate: 80%;
+    --expert: 100%;
 
 }
 

@@ -1,8 +1,3 @@
-/* :root {
-    --accent-color: #58A6FF;
-    --background-color: #0D1117;
-    --color-text: white;
-} */
 :root{
     --color-background: #252424; /*achtergrond*/
     --color-accentGrey: #70798c; /*randen, secondary text*/
@@ -11,7 +6,6 @@
     --color-accentGreenBlue: #007ea7; /*subaccent, iconen, subtiele highlights*/
     --color-accentgreen: #3bc14a; /*succes bevestigingen*/
     --color-accentDarkerGreen: #4da167; 
-    /* --color-text: #C9D1D9; */
         --color-text: #ffffff;
 
 }
@@ -20,7 +14,7 @@
     width: 0;
   }
   to {
-    width: 190px; /* zelfde als de standaard lijnlengte */
+    width: 103px; /* zelfde als de standaard lijnlengte */
   }
 }
 
@@ -29,7 +23,7 @@
     height: 0%;
   }
   to {
-    height: 100%; /* zelfde als de standaard lijnlengte */
+    height: 450px; /* zelfde als de standaard lijnlengte */
   }
 }
 
@@ -45,18 +39,25 @@
     display: flex;
     flex-direction: column;
     padding: 1rem;
+    align-items: center;
 }
-
+.ExperiencesidePanel {
+    max-width: 450px;  
+    width: 100%; 
+    display: flex ;  
+    justify-content: center; 
+    flex-direction: column;
+}
 /* Verticale lijn in het midden */
 .timeline {
-    position: relative;
+    position: absolute;
     width: 13px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     border-radius: 15px;
     background: var(--color-accentBlue);
-    animation: growTimeLine 3s ease forwards;
+    animation: growTimeLine 4s ease forwards;
 }
 
 /* Timeline items */
@@ -84,12 +85,12 @@
 
 /* Positie links/rechts bolletjes */
 .timeline-item.left .timeline-dot {
-    left: -185px;
+    left: -95px;
     transform: translateX(-100%);
 }
 
 .timeline-item.right .timeline-dot {
-    left: 190px;
+    left: 100px;
     transform: translateX(0);
 }
 
@@ -142,13 +143,13 @@
 
 /* Posities content */
 .timeline-item.left .timeline-content {
-    left: -200px;
+    left: -110px;
     text-align: right;
     transform: translateX(-100%);
 }
 
 .timeline-item.right .timeline-content {
-    left: 200px;
+    left: 110px;
     text-align: left;
     transform: translateX(0);
 }
@@ -213,7 +214,7 @@
     /* experience text */
     .timeline-content {
         background: transparent;
-        color: var(--color-accentBlue);
+        color: var(--color-text);
         padding: 1rem;
         border-radius: 10px;
         width: 200px;
