@@ -103,6 +103,7 @@ label, h4, h5, h6 {
 
 p {
     color: var(--color-text);
+    font-weight: bold;
 }
 
 img {
@@ -130,7 +131,6 @@ button {
     flex-direction: column;
     padding: 1rem;
     gap: 1rem;
-    
 }
 
 @media (min-width: 768px) {
@@ -184,4 +184,8 @@ span {
     gap: 15px;
     align-items: center; 
     justify-content: center; 
+}
+.skillsTitle {
+    color:white; 
+    text-transform: lowercase;
 }

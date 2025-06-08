@@ -23,7 +23,7 @@ const routes = {
             <hr />
             <section class="personalia">
                 <div class="profile-content__category">
-                    <h3 style="color:white; text-transform: lowercase;">Skills 
+                    <h3 class="skillsTitle">Skills 
                         <div class="tooltip-container">
                             <span class="tooltip-target" aria-label="Uitleg">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="15" viewBox="0 0 512 512"
@@ -35,7 +35,7 @@ const routes = {
                             </span>
                             <div class="tooltip-box">
                                 <h4>Skill Levels Explained</h4>
-                                    <ul style="padding-left: 1.2em; margin: 0; font-size: 0.85rem; list-style-type: disc;">
+                                    <ul class="Tooltip-List">
                                         <li><strong>Beginner:</strong> Just starting out, learning the basic principles.</li>
                                             <hr>
                                         <li><strong>Average:</strong> Can work independently on simple tasks, with occasional guidance.</li>
@@ -194,7 +194,7 @@ const routes = {
                             </span>
                             <div class="tooltip-box">
                                 <h5>Rich Text Editor</h4>
-                                    <ul style="padding-left: 1.2em; margin: 0; font-size: 0.85rem; list-style-type: disc;">
+                                    <ul class="Tooltip-List">
                                         <li><strong>The product:</strong> A customized rich text editor built based on specific requirements.</li>
                                             <hr>
                                         <li><strong>Its purpose:</strong> Packaged as an NPM module so that multiple microservices can reuse the editor efficiently.</li>
@@ -214,8 +214,8 @@ const routes = {
 </div>
   `,
   "/Experience": () => `
-   <div class="page" style="gap: 137px;">
-    <div class="sidePanel">
+   <div class="page experiencepagestyle">
+    <div class="sidePanel experiencePanel">
         <div class="LeftPanel">
             <img src="Content/images/black.png" />
             <hr />
@@ -245,7 +245,7 @@ const routes = {
             <div class="timeline-dot"></div>
             <div class="timeline-content">
                 <h3 class="timelineheader">2025</h3> <span>april - june</span>
-                <p style="font-weight: bold;">web development internship</p>
+                <p>web development internship</p>
                 <span class="companyspan" >Djurve</span>
             </div>
         </div>
@@ -253,7 +253,7 @@ const routes = {
             <div class="timeline-dot"></div>
             <div class="timeline-content">
                 <h3 class="timelineheader">2022</h3> <span>- until present</span>
-                <p style="font-weight: bold;">Restaurant staff </p>
+                <p>Restaurant staff </p>
                 <span class="companyspan" >Ko Shing</span>
             </div>
         </div>
@@ -261,7 +261,7 @@ const routes = {
             <div class="timeline-dot"></div>
             <div class="timeline-content">
                 <h3 class="timelineheader">2022</h3> <span>feb - sept</span>
-                <p style="font-weight: bold;">bread department</p>
+                <p>bread department</p>
                 <span class="companyspan" >Jumbo</span>
 
             </div>
@@ -270,7 +270,7 @@ const routes = {
             <div class="timeline-dot"></div>
             <div class="timeline-content">
                 <h3 class="timelineheader">2020</h3> <span>- until 2021</span>
-                <p style="font-weight: bold;">Warehouse employee </p>
+                <p>Warehouse employee </p>
                 <span class="companyspan" >DA</span>
 
             </div>
@@ -391,6 +391,22 @@ function berekenLeeftijd(geboortedatum) {
   return leeftijd;
 }
 
+function setActiveNav() {
+    const currentHash = location.hash || "#/";
+    const links = document.querySelectorAll(".nav-link");
+
+    links.forEach(link => {
+      const route = link.getAttribute("href");
+      if (route === currentHash) {
+        link.classList.add("active");
+      } else {
+        link.classList.remove("active");
+      }
+    });
+  }
+
+  window.addEventListener("hashchange", setActiveNav);
+  window.addEventListener("DOMContentLoaded", setActiveNav);
 
 window.addEventListener("hashchange", router);
 window.addEventListener("DOMContentLoaded", router);

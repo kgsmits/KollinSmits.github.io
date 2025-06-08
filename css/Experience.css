@@ -221,6 +221,15 @@
         position: absolute;
         top: -10px;
     }
+    .experiencepagestyle{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    gap: 0px;
+    }
+    .experiencePanel{
+        display: none;
+    }
 }
 
 .companyspan{
@@ -229,6 +238,12 @@
     position: relative;
 }
 
+.experiencepagestyle{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    gap: 137px;
+}
 
 
 

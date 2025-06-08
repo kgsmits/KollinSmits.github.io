@@ -237,3 +237,10 @@
   visibility: visible;
   opacity: 1;
 }
+
+.Tooltip-List{
+    padding-left: 1.2em; 
+    margin: 0; 
+    font-size: 0.85rem; 
+    list-style-type: disc;
+}
