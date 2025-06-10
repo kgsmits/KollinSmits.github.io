@@ -56,54 +56,7 @@ const routes = {
                         <h4 class="profile-content__title">Hard skills </h4>
                     </div>
 
-                    <div class="profile-content__element-header">
-                        <div class="profile-content__skills">Svelte </div>
-                        <div class="profile-content__period">since 2025</div>
-                    </div>
-                    <div class="skillbar_container" skill-level="Beginner">
-                        <div class="skillbar skillbar_percentage beginner"></div>
-                    </div>
-
-                    <div class="profile-content__element-header">
-                        <div class="profile-content__skills">Javascript </div>
-                        <div class="profile-content__period">since 2023</div>
-                    </div>
-                    <div class="skillbar_container" skill-level="Good">
-                        <div class="skillbar skillbar_percentage good"></div>
-                    </div>
-
-                    <div class="profile-content__element-header">
-                        <div class="profile-content__skills">Typescript </div>
-                        <div class="profile-content__period">since 2025</div>
-                    </div>
-                    <div class="skillbar_container" skill-level="Beginner">
-                        <div class="skillbar skillbar_percentage beginner"></div>
-                    </div>
-
-                    <div class="profile-content__element-header">
-                        <div class="profile-content__skills">C++</div>
-                        <div class="profile-content__period">since 2024</div>
-                    </div>
-                    <div class="skillbar_container" skill-level="Beginner">
-                        <div class="skillbar skillbar_percentage beginner"></div>
-                    </div>
-
-                    <div class="profile-content__element-header">
-                        <div class="profile-content__skills">PHP</div>
-                        <div class="profile-content__period">since 2023</div>
-                    </div>
-                    <div class="skillbar_container" skill-level="Beginner">
-                        <div class="skillbar skillbar_percentage beginner"></div>
-                    </div>
-
-                    <div class="profile-content__element-header">
-                        <div class="profile-content__skills">Java </div>
-                        <div class="profile-content__period">since 2023</div>
-                    </div>
-                    <div class="skillbar_container" skill-level="Average">
-                        <div class="skillbar skillbar_percentage average"></div>
-                    </div>
-
+                    
                     <div class="profile-content__element-header">
                         <div class="profile-content__skills">C# </div>
                         <div class="profile-content__period">since 2024</div>
@@ -142,6 +95,54 @@ const routes = {
                     </div>
                     <div class="skillbar_container" skill-level="Good">
                         <div class="skillbar skillbar_percentage good"></div>
+                    </div>
+
+                    <div class="profile-content__element-header">
+                        <div class="profile-content__skills">Javascript </div>
+                        <div class="profile-content__period">since 2023</div>
+                    </div>
+                    <div class="skillbar_container" skill-level="Good">
+                        <div class="skillbar skillbar_percentage good"></div>
+                    </div>
+
+                    <div class="profile-content__element-header">
+                        <div class="profile-content__skills">Java </div>
+                        <div class="profile-content__period">since 2023</div>
+                    </div>
+                    <div class="skillbar_container" skill-level="Average">
+                        <div class="skillbar skillbar_percentage average"></div>
+                    </div>
+
+                    <div class="profile-content__element-header">
+                        <div class="profile-content__skills">Svelte </div>
+                        <div class="profile-content__period">since 2025</div>
+                    </div>
+                    <div class="skillbar_container" skill-level="Beginner">
+                        <div class="skillbar skillbar_percentage beginner"></div>
+                    </div>
+
+                    <div class="profile-content__element-header">
+                        <div class="profile-content__skills">Typescript </div>
+                        <div class="profile-content__period">since 2025</div>
+                    </div>
+                    <div class="skillbar_container" skill-level="Beginner">
+                        <div class="skillbar skillbar_percentage beginner"></div>
+                    </div>
+
+                    <div class="profile-content__element-header">
+                        <div class="profile-content__skills">C++</div>
+                        <div class="profile-content__period">since 2024</div>
+                    </div>
+                    <div class="skillbar_container" skill-level="Beginner">
+                        <div class="skillbar skillbar_percentage beginner"></div>
+                    </div>
+
+                    <div class="profile-content__element-header">
+                        <div class="profile-content__skills">PHP</div>
+                        <div class="profile-content__period">since 2023</div>
+                    </div>
+                    <div class="skillbar_container" skill-level="Beginner">
+                        <div class="skillbar skillbar_percentage beginner"></div>
                     </div>
 
                 </div>
