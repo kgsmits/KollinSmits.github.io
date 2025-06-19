@@ -321,10 +321,16 @@ const routes = {
         <section>
             <div class="divtext">
             <h3 class="text-center">About me</h3>
-            Hi! I'm Kollin Smits,
-                a passionate and ambitious software engineering student at <a href="https://www.windesheim.nl" target="_blank">Windesheim Zwolle</a>, currently pursuing a degree in software development. I am driven by curiosity, eager to learn, and always looking for new challenges that help me grow both personally and professionally.
-                With a strong interest in development, I continuously work on projects to improve my skills and explore new technologies. On this website, you'll find an overview of my journey so far—ranging from academic assignments to personal projects and everything in between.
-                Feel free to take a look around and get in touch if you'd like to connect!        
+            Hello! I am Kollin Smits, a motivated and curious software engineering student at Windesheim Zwolle. 
+            Ever since I discovered programming, I've been passionate about creating things that solve real problems 
+            and make life easier—or simply more fun. I am someone who loves to learn by doing. Whether it is through 
+            academic projects, personal experiments, or collaborating with others, I am always looking for ways to deepen 
+            my knowledge and improve my skills. I'm especially interested in agile development, with a particular focus on Scrum, 
+            where teamwork, adaptability, and continuous improvement play a big role. Outside of my studies, I enjoy working on side 
+            projects that challenge me to try new technologies and push my creativity. I believe that growth comes from stepping out of 
+            your comfort zone, and I actively seek out opportunities that help me do just that.
+            <br><br>
+            Thanks for visiting my site. Feel free to reach out if you would like to connect or collaborate!
             </div>
 
         </section>
