@@ -1,11 +1,17 @@
-:root{
-    --color-background: #252424; /*achtergrond*/
-    --color-accentGrey: #70798c; /*randen, secondary text*/
-    --color-accentBlue: #00a8e8; /*hover, links, buttons*/
-    --color-accentDarkBlue: #003459; /*titels, text highlights*/
-    --color-accentGreenBlue: #007ea7; /*subaccent, iconen, subtiele highlights*/
-    --color-accentgreen: #3bc14a; /*succes bevestigingen*/
-    --color-accentDarkerGreen: #4da167; 
+:root {
+    --color-background: #252424;
+    /*achtergrond*/
+    --color-accentGrey: #70798c;
+    /*randen, secondary text*/
+    --color-accentBlue: #00a8e8;
+    /*hover, links, buttons*/
+    --color-accentDarkBlue: #003459;
+    /*titels, text highlights*/
+    --color-accentGreenBlue: #007ea7;
+    /*subaccent, iconen, subtiele highlights*/
+    --color-accentgreen: #3bc14a;
+    /*succes bevestigingen*/
+    --color-accentDarkerGreen: #4da167;
     --color-text: #ffffff;
 }
 
@@ -19,11 +25,16 @@ html {
     }
 }
 
-.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+.btn:focus,
+.btn:active:focus,
+.btn-link.nav-link:focus,
+.form-control:focus,
+.form-check-input:focus {
     box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
 }
 
-html, body {
+html,
+body {
     height: 100%;
     margin: 0;
     padding: 0;
@@ -48,18 +59,16 @@ nav {
 .navlink {
     color: var(--color-text) !important;
     text-decoration: none;
-    font-weight: bold;
 }
 
-    .navlink:hover {
-        color: var(--color-accentGreenBlue) !important;
-        text-decoration: none;
-    }
+.navlink:hover {
+    color: var(--color-accentGreenBlue) !important;
+    text-decoration: none;
+}
 
-    .navlink.active {
-        color: var(--color-accentGreenBlue) !important;
-        font-weight: bold;
-    }
+.navlink.active {
+    color: var(--color-accentGreenBlue) !important;
+}
 
 ul {
     gap: 20px;
@@ -71,6 +80,10 @@ body {
     color: var(--color-text);
     display: flex;
     flex-direction: column;
+}
+
+div {
+    display: block;
 }
 
 footer {
@@ -86,24 +99,29 @@ footer {
     justify-content: center;
 }
 
-nav, footer {
+nav,
+footer {
     display: flex;
     background-color: var(--color-background);
     color: var(--color-text);
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     color: var(--color-accentBlue);
     text-transform: uppercase;
 }
 
-label, h4, h5, h6 {
+label,
+h4,
+h5,
+h6 {
     color: var(--color-accentBlue);
 }
 
 p {
     color: var(--color-text);
-    font-weight: bold;
 }
 
 img {
@@ -111,14 +129,16 @@ img {
     border-radius: 50%;
     margin: 20px;
 }
+
 .linkimage {
     width: 42px;
     height: 42px;
     margin: 0px;
     border-radius: 0%;
 }
+
 .linkimage.github-white {
-  filter: invert(100%) brightness(200%);
+    filter: invert(100%) brightness(200%);
 }
 
 button {
@@ -152,7 +172,7 @@ button {
 }
 
 .sidePanel {
-    max-width: 450px;   
+    max-width: 450px;
 }
 
 .LeftPanel {
@@ -177,15 +197,17 @@ hr {
 span {
     font-size: 11px;
 }
+
 .links {
     width: 80%;
     display: flex;
     flex-direction: row;
     gap: 15px;
-    align-items: center; 
-    justify-content: center; 
+    align-items: center;
+    justify-content: center;
 }
+
 .skillsTitle {
-    color:white; 
+    color: white;
     text-transform: lowercase;
 }
