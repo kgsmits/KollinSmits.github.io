@@ -1,0 +1,44 @@
+:root {
+    --color-background: #252424;
+    --color-background2: #3d3c3c;
+    --color-accentGrey: #70798c;
+    --color-accentBlue: #00a8e8;
+    --color-accentDarkBlue: #003459;
+    --color-accentGreenBlue: #007ea7;
+    --color-accentgreen: #3bc14a;
+    --color-accentDarkerGreen: #4da167;
+    --color-text: #ffffff;
+    --beginner: 20%;
+    --average: 40%;
+    --good: 60%;
+    --intermediate: 80%;
+    --expert: 100%;
+
+}
+
+.about-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+.about-text-container {
+    max-width: 500px;
+
+}
+
+.about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    border: #00a8e8 1px solid;
+}
+
+.about-span{
+    color: var(--color-accentBlue);
+    text-transform: uppercase;
+    font-size: 3rem;
+}
+
