@@ -2,7 +2,6 @@ const routeToPage = {
   "/": "pages/home.html",
   "/Experience": "pages/experience.html",
   "/Aboutme": "pages/aboutme.html",
-  "/skills": "pages/skills.html"
 };
 
 function router() {
