@@ -15,25 +15,44 @@
     --expert: 100%;
 
     --primary: hsl(239, 84%, 67%);
-        /* blue  */
-        --secondary: hsl(195, 100%, 50%);
-        /* lightblue */
-        --thirtiary: hsl(0, 0%, 85%);
-        /* gray accent */
-        --background: hsl(230, 60%, 6%);
-        /* Background gradient */
-        --background-accent: hsl(230, 50%, 3%);
-        /* donkerder */
-    
-        --gray-300: hsl(230, 10%, 70%);
-        --gray-500: hsl(230, 10%, 50%);
-        --gray-700: hsl(230, 10%, 30%);
+    /* blue  */
+    --secondary: hsl(195, 100%, 50%);
+    /* lightblue */
+    --thirtiary: hsl(0, 0%, 85%);
+    /* gray accent */
+    --background: hsl(230, 60%, 6%);
+    /* Background gradient */
+    --background-accent: hsl(230, 50%, 3%);
+    /* donkerder */
+
+    --gray-300: hsl(230, 10%, 70%);
+    --gray-500: hsl(230, 10%, 50%);
+    --gray-700: hsl(230, 10%, 30%);
 }
 
 .about-grid {
     max-width: 1200px;
     margin: 0 auto;
     margin-bottom: 50px;
+    padding: 0 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.about-grid-home {
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    padding: 0 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.about-grid-skills {
+    max-width: 1200px;
+    margin: 0 auto;
     padding: 0 1rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -87,5 +106,35 @@
 }
 
 .skill-card-img {
-    max-height: 48px;
+    max-height: 38px;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 1002px) {
+    .about-grid {
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr;
+    }
+
+    .about-grid-home {
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr;
+    }
+
+    .about-grid-skills {
+        max-width: 400px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .image-container {
+        display: none;
+    }
+    
 }

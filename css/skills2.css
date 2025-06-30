@@ -30,8 +30,6 @@
     --gray-700: hsl(230, 10%, 30%);
 }
 
-/* style="--category-gradient:linear-gradient(135deg, #4834D4 0%, #686DE0 100%)"*/
-
 .skills-container {
     max-width: 1200px;
     margin: 0 auto;
@@ -74,6 +72,8 @@
     gap: 1rem;
 }
 
+
+
 .skills-item {
     position: relative;
     background: rgba(255, 255, 255, .95);
@@ -95,4 +95,27 @@
     align-items: center;
     gap: .75rem;
     position: relative;
+}
+
+.item-a {
+    order: 1;
+}
+
+.item-b {
+    order: 2;
+}
+
+@media (max-width: 1002px) {
+    .skills-category-grid {
+        display: grid;
+        grid-template-rows: repeat(auto-fill, minmax(120px, 1fr));
+        gap: 1rem;
+    }
+
+        .item-a {
+            order: 2;
+        }
+    
+        .item-b {
+            order: 1;   }
 }

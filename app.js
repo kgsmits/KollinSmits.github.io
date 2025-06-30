@@ -1,7 +1,7 @@
 const routeToPage = {
   "/": "pages/home.html",
   "/Experience": "pages/experience.html",
-  "/Aboutme": "pages/aboutme.html",
+  "/Resume": "pages/resume.html",
 };
 
 function router() {
@@ -16,7 +16,7 @@ function router() {
     .then(html => {
       document.getElementById("body").innerHTML = html;
       // Inject age if Aboutme page
-      if (path === "/Aboutme") {
+      if (path === "/Resume") {
         const age = berekenLeeftijd('2005-02-28');
         const ageElem = document.querySelector('.profile-content__skills li');
         if (ageElem) ageElem.innerHTML = `Age: ${age} `;
