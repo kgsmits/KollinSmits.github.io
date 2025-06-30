@@ -13,6 +13,21 @@
     /*succes bevestigingen*/
     --color-accentDarkerGreen: #4da167;
     --color-text: #ffffff;
+
+    --primary: hsl(239, 84%, 67%);
+    /* blue  */
+    --secondary: hsl(195, 100%, 50%);
+    /* lightblue */
+    --thirtiary: hsl(0, 0%, 85%);
+    /* gray accent */
+    --background: hsl(230, 60%, 6%);
+    /* Background gradient */
+    --background-accent: hsl(230, 50%, 3%);
+    /* donkerder */
+
+    --gray-300: hsl(230, 10%, 70%);
+    --gray-500: hsl(230, 10%, 50%);
+    --gray-700: hsl(230, 10%, 30%);
 }
 
 html {
@@ -42,10 +57,24 @@ body {
     flex-direction: column;
 }
 
+body {
+    padding-top: 70px;
+    display: flex;
+    flex-direction: column;
+}
+
 main {
     flex: 1;
     display: flex;
     flex-direction: column;
+    background: linear-gradient(135deg, var(--background) 0%, var(--background) 50%, hsla(239, 84%, 67%, 0.1) 100%);    color: var(--color-text);
+}
+
+nav,
+footer {
+    display: flex;
+    background-color: var(--background);
+    color: var(--color-text);
 }
 
 nav {
@@ -79,18 +108,10 @@ ul {
     gap: 20px;
 }
 
-body {
-    padding-top: 70px;
-    background-color: var(--color-background);
-    color: var(--color-text);
-    display: flex;
-    flex-direction: column;
-}
 
 section {
     height: fit-content;
-    padding: 6rem 0;
-    border: 1px solid var(--color-accentGrey);
+    padding: 4rem 0;
 }
 
 div {
@@ -112,13 +133,6 @@ footer {
     align-items: center;
 }
 
-nav,
-footer {
-    display: flex;
-    background-color: var(--color-background);
-    color: var(--color-text);
-}
-
 h2 {
     font-size: 3rem;
     font-weight: 800;
@@ -128,7 +142,7 @@ h2 {
 h1,
 h2,
 h3 {
-    color: var(--color-accentBlue);
+    color: var(--secondary);
     text-transform: uppercase;
 }
 
@@ -137,7 +151,7 @@ label,
 h4,
 h5,
 h6 {
-    color: var(--color-accentBlue);
+    color: var(--secondary);
 }
 
 p {
@@ -161,7 +175,7 @@ img {
 }
 
 button {
-    background-color: var(--color-accentBlue);
+    background-color: var(--secondary);
     color: var(--color-background);
 }
 
@@ -184,7 +198,7 @@ button {
     align-content: center;
     padding: 0.5rem;
     border: 1px solid var(--color-accentGrey);
-    border-radius: 15px;
+    border-radius: 8px;
     font-size: 14px;
     color: white;
     margin-bottom: 10px;
@@ -201,7 +215,7 @@ button {
     flex-direction: column;
     padding: 0.5rem;
     border-right: 1px solid var(--color-accentGrey);
-    border-radius: 15px;
+    border-radius: 8px;
     font-size: 14px;
     width: 350px;
 }

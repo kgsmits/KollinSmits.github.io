@@ -14,6 +14,20 @@
     --intermediate: 80%;
     --expert: 100%;
 
+    --primary: hsl(239, 84%, 67%);
+        /* blue  */
+        --secondary: hsl(195, 100%, 50%);
+        /* lightblue */
+        --thirtiary: hsl(0, 0%, 85%);
+        /* gray accent */
+        --background: hsl(230, 60%, 6%);
+        /* Background gradient */
+        --background-accent: hsl(230, 50%, 3%);
+        /* donkerder */
+    
+        --gray-300: hsl(230, 10%, 70%);
+        --gray-500: hsl(230, 10%, 50%);
+        --gray-700: hsl(230, 10%, 30%);
 }
 
 .about-grid {
@@ -53,11 +67,12 @@
     padding: 1rem;
     border-radius: 10px;
 }
+
 .skill-card {
     max-height: 7rem;
     min-width: 6rem;
     flex-basis: 16.666667%;
-    background-color: var(--color-background2);
+    background-color: var(--gray-700);
     display: flex;
     flex-direction: column;
     justify-items: center;
@@ -70,6 +85,7 @@
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, .2);
     cursor: pointer;
 }
+
 .skill-card-img {
     max-height: 48px;
 }

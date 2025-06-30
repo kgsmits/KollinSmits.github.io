@@ -14,6 +14,20 @@
     --intermediate: 80%;
     --expert: 100%;
 
+    --primary: hsl(239, 84%, 67%);
+    /* blue  */
+    --secondary: hsl(195, 100%, 50%);
+    /* lightblue */
+    --thirtiary: hsl(0, 0%, 85%);
+    /* gray accent */
+    --background: hsl(230, 60%, 6%);
+    /* Background gradient */
+    --background-accent: hsl(230, 50%, 3%);
+    /* donkerder */
+
+    --gray-300: hsl(230, 10%, 70%);
+    --gray-500: hsl(230, 10%, 50%);
+    --gray-700: hsl(230, 10%, 30%);
 }
 
 /* style="--category-gradient:linear-gradient(135deg, #4834D4 0%, #686DE0 100%)"*/
@@ -38,7 +52,7 @@
 .skills-category {
     padding: 1.5rem;
     border-radius: 12px;
-    background: var(--color-background2);
+    background: var(--gray-700);
     position: relative;
     overflow: hidden;
     box-shadow: 0 4px 6px rgba(0, 0, 0, .05);
@@ -51,7 +65,7 @@
     left: 0;
     right: 0;
     height: 4px;
-    background: green;
+    background: var(--secondary);
 }
 
 .skills-grid {
