@@ -34,7 +34,7 @@ html {
     font-size: 14px;
 }
 
-@media (min-width: 1002px) {
+@media (min-width: 1024px) {
     html {
         font-size: 16px;
     }
@@ -48,6 +48,10 @@ html {
     box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 html,
 body {
     height: 100%;
@@ -55,6 +59,21 @@ body {
     padding: 0;
     display: flex;
     flex-direction: column;
+    overflow-x: hidden;
+}
+
+@media screen and (max-width: 1024px) {
+
+    html,
+    body {
+        height: 103%;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        overflow-x: hidden;
+    }
+
 }
 
 body {
@@ -79,7 +98,6 @@ footer {
 }
 
 nav {
-    display: flex;
     align-content: center;
     align-items: center;
     color: var(--color-text);
@@ -195,9 +213,21 @@ button {
     }
 }
 
-@media (max-width: 1002px) {
-    
+@media (max-width: 1024px) {
+    .page {
+        flex-direction: column;
+        padding: 1rem;
+        gap: 1rem;
+        align-items: center;
+    }
+
+    section {
+        height: fit-content;
+        padding-top: 1rem;
+    }
 }
+
+
 
 .divtext {
     align-content: center;
@@ -213,6 +243,29 @@ button {
     max-width: 450px;
 }
 
+.resume-container {
+    max-width: 800px;
+}
+
+@media (max-width: 1024px) {
+    .divtext {
+        width: 100%;
+    }
+
+    .sidePanel {
+        max-width: 100%;
+    }
+
+    .RightPanel {
+        width: 100%;
+    }
+
+    .resume-container {
+        max-width: 100%;
+    }
+
+}
+
 .LeftPanel {
     align-content: center;
     align-items: center;
@@ -220,6 +273,26 @@ button {
     flex-direction: column;
     padding: 0.5rem;
     border-right: 1px solid var(--color-accentGrey);
+    border-radius: 8px;
+    font-size: 14px;
+    width: 350px;
+}
+
+@media (min-width: 1025px) {
+    .RightPanel {
+        position: fixed;
+            top: 10;
+            z-index: 100;
+    }
+}
+
+.RightPanel {
+    align-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    border-left: 1px solid var(--color-accentGrey);
     border-radius: 8px;
     font-size: 14px;
     width: 350px;

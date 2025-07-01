@@ -157,7 +157,7 @@
     order: 2;
 }
 
-@media (max-width: 1002px) {
+@media (max-width: 1024px) {
     .skills-category-grid {
         display: grid;
         grid-template-rows: repeat(auto-fill, minmax(120px, 1fr));

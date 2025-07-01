@@ -18,7 +18,7 @@ function router() {
       // Inject age if Aboutme page
       if (path === "/Resume") {
         const age = berekenLeeftijd('2005-02-28');
-        const ageElem = document.querySelector('.profile-content__skills li');
+        const ageElem = document.querySelector('.age li');
         if (ageElem) ageElem.innerHTML = `Age: ${age} `;
       }
     })

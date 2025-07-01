@@ -1,13 +1,33 @@
-:root{
-    --color-background: #252424; /*achtergrond*/
-    --color-accentGrey: #70798c; /*randen, secondary text*/
-    --color-accentBlue: #00a8e8; /*hover, links, buttons*/
-    --color-accentDarkBlue: #003459; /*titels, text highlights*/
-    --color-accentGreenBlue: #007ea7; /*subaccent, iconen, subtiele highlights*/
-    --color-accentgreen: #3bc14a; /*succes bevestigingen*/
-    --color-accentDarkerGreen: #4da167; 
-        --color-text: #ffffff;
+:root {
+    --color-background: #252424;
+    --color-background2: #3d3c3c;
+    --color-accentGrey: #70798c;
+    --color-accentBlue: #00a8e8;
+    --color-accentDarkBlue: #003459;
+    --color-accentGreenBlue: #007ea7;
+    --color-accentgreen: #3bc14a;
+    --color-accentDarkerGreen: #4da167;
+    --color-text: #ffffff;
+    --beginner: 20%;
+    --average: 40%;
+    --good: 60%;
+    --intermediate: 80%;
+    --expert: 100%;
 
+    --primary: hsl(239, 84%, 67%);
+    /* blue  */
+    --secondary: hsl(195, 100%, 50%);
+    /* lightblue */
+    --thirtiary: hsl(0, 0%, 85%);
+    /* gray accent */
+    --background: hsl(230, 60%, 6%);
+    /* Background gradient */
+    --background-accent: hsl(230, 50%, 3%);
+    /* donkerder */
+
+    --gray-300: hsl(230, 10%, 70%);
+    --gray-500: hsl(230, 10%, 50%);
+    --gray-700: hsl(230, 10%, 30%);
 }
 @keyframes growLine {
   from {
@@ -73,7 +93,7 @@
     }
 /* De bolletjes */
 .timeline-dot {
-    position: absolute;
+    position: relative;
     top: 0;
     width: 20px;
     height: 20px;
@@ -159,7 +179,7 @@
 }
 
 /* Responsieve aanpassing: pas toe onder 667px */
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1024px) {
     /* Timeline items */
     .timeline-item {
         position: relative;
@@ -222,6 +242,7 @@
         top: -10px;
     }
     .experiencepagestyle{
+    align-items: center;
     display: flex;
     flex-direction: column;
     padding: 1rem;
@@ -240,7 +261,6 @@
 
 .experiencepagestyle{
     display: flex;
-    flex-direction: column;
     padding: 1rem;
     gap: 137px;
 }

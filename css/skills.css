@@ -1,11 +1,12 @@
-:root{
-    --color-background: #252424; /*achtergrond*/
-    --color-accentGrey: #70798c; /*randen, secondary text*/
-    --color-accentBlue: #00a8e8; /*hover, links, buttons*/
-    --color-accentDarkBlue: #003459; /*titels, text highlights*/
-    --color-accentGreenBlue: #007ea7; /*subaccent, iconen, subtiele highlights*/
-    --color-accentgreen: #3bc14a; /*succes bevestigingen*/
-    --color-accentDarkerGreen: #4da167; 
+:root {
+    --color-background: #252424;
+    --color-background2: #3d3c3c;
+    --color-accentGrey: #70798c;
+    --color-accentBlue: #00a8e8;
+    --color-accentDarkBlue: #003459;
+    --color-accentGreenBlue: #007ea7;
+    --color-accentgreen: #3bc14a;
+    --color-accentDarkerGreen: #4da167;
     --color-text: #ffffff;
     --beginner: 20%;
     --average: 40%;
@@ -13,64 +14,20 @@
     --intermediate: 80%;
     --expert: 100%;
 
-}
+    --primary: hsl(239, 84%, 67%);
+    /* blue  */
+    --secondary: hsl(195, 100%, 50%);
+    /* lightblue */
+    --thirtiary: hsl(0, 0%, 85%);
+    /* gray accent */
+    --background: hsl(230, 60%, 6%);
+    /* Background gradient */
+    --background-accent: hsl(230, 50%, 3%);
+    /* donkerder */
 
-.personalia {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.skillbar_container {
-    position: relative;
-    height: 10px;
-    width: 100%;
-    background-color: #191923;
-    border-radius: 15px;
-    margin-bottom: 25px;
-}
-
-.skillbar {
-    height: 100%;
-    border-radius: 15px;
-    background-color: var(--color-accentBlue);
-    position: relative;
-}
-
-.skillbar_container::after {
-    content: attr(skill-level);
-    position: absolute;
-    top: -40px;
-    right: 0px;
-    color: white;
-    font-size: 14px;
-    font-weight: bold;
-}
-
-.skillbar_percentage.beginner {
-    --percentage: var(--beginner);
-}
-
-.skillbar_percentage.average {
-    --percentage: var(--average);
-}
-
-.skillbar_percentage.good{
-    --percentage: var(--good);
-}
-
-.skillbar_percentage.intermediate {
-    --percentage: var(--intermediate);
-}
-
-.skillbar_percentage.expert {
-    --percentage: var(--expert);
-}
-
-.skillbar_percentage {
-    width: 0%;
-    animation: skillbaranimation 3s forwards;
+    --gray-300: hsl(230, 10%, 70%);
+    --gray-500: hsl(230, 10%, 50%);
+    --gray-700: hsl(230, 10%, 30%);
 }
 
 @keyframes skillbaranimation {
@@ -142,13 +99,9 @@
     font-size: 14px;
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 1024px) {
     .skills {
         width: 49.7%;
-    }
-
-    .page {
-        flex-direction: row;
     }
 
     .profile-content__institute {
@@ -172,10 +125,10 @@
         flex-direction: column;
     }
 
-        .profile-content__category--hidden-mobile hr {
-            width: 100%;
-            color: grey;
-        }
+    .profile-content__category--hidden-mobile hr {
+        width: 100%;
+        color: grey;
+    }
 
     .profile-content__element--hidden-mobile {
         display: flex;
@@ -194,53 +147,4 @@
         color: var(--text-color);
         display: flex;
     }
-}
-
-.tooltip-container {
-  position: relative;
-  display: inline-block;
-}
-
-.tooltip-target {
-  cursor: pointer;
-  display: inline-block;
-  width: 24px;
-  height: 24px;
-  vertical-align: middle;
-}
-.tooltip-target:hover svg {
-  fill: var(--color-accentBlue);
-  
-}
-
-.tooltip-box {
-  visibility: hidden;
-  opacity: 0;
-  background-color: #333;
-  color: #fff;
-  text-align: left;
-  border-radius: 8px;
-  padding: 10px;
-  position: absolute;
-  top: 130%;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 250px;
-  z-index: 10;
-  font-size: 0.9rem;
-  line-height: 1.4;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  transition: opacity 0.3s ease;
-}
-
-.tooltip-container:hover .tooltip-box {
-  visibility: visible;
-  opacity: 1;
-}
-
-.Tooltip-List{
-    padding-left: 1.2em; 
-    margin: 0; 
-    font-size: 0.85rem; 
-    list-style-type: disc;
 }

@@ -61,7 +61,6 @@
 
 .about-text-container {
     max-width: 500px;
-
 }
 
 .about-container {
@@ -148,8 +147,7 @@
 }
 
 .skill-card.github:hover {
-    border-color: #DF781F;
-    /* #00796B */
+    border-color: #2dba4e;
 }
 
 .skill-card-img {
@@ -163,10 +161,14 @@
     margin-bottom: 1rem;
 }
 
-@media (max-width: 1002px) {
+@media (max-width: 1024px) {
     .about-grid {
         grid-template-rows: 1fr 1fr;
         grid-template-columns: 1fr;
+    }
+
+    .about-text-container {
+        max-width: 100%;
     }
 
     .about-grid-home {
