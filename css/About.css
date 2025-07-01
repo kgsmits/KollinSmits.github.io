@@ -100,9 +100,56 @@
     height: 130px;
     align-items: center;
     transition: all .3s;
-    border-radius: 10px;
+    border-radius: 8px;
+    transition: all .3s ease;
+    border: 2px solid transparent;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, .2);
     cursor: pointer;
+}
+
+.skill-card:hover {
+    transform: translateY(-3px);
+}
+
+.skill-card.visualparadigm:hover {
+    border-color: #CB3131;
+}
+
+.skill-card.drawio:hover {
+    border-color: #F08705;
+}
+
+.skill-card.balsamiq:hover {
+    border-color: #AE1C59;
+}
+
+.skill-card.illustrator:hover {
+    border-color: #FF9A00;
+}
+
+.skill-card.figma:hover {
+    border-color: #0ACF83;
+}
+
+.skill-card.scrumpoker:hover {
+    border-color: #4E9CB0;
+}
+
+.skill-card.easyretro:hover {
+    border-color: #2467F3;
+}
+
+.skill-card.jira:hover {
+    border-color: #2684FF;
+}
+
+.skill-card.confluence:hover {
+    border-color: #2684FF;
+}
+
+.skill-card.github:hover {
+    border-color: #DF781F;
+    /* #00796B */
 }
 
 .skill-card-img {
@@ -136,5 +183,5 @@
     .image-container {
         display: none;
     }
-    
+
 }
