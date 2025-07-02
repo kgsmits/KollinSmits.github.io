@@ -30,121 +30,145 @@
     --gray-700: hsl(230, 10%, 30%);
 }
 
-@keyframes skillbaranimation {
-    from {
-        width: 0%;
-    }
-
-    to {
-        width: var(--percentage);
-    }
+.skills-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
 }
 
-.profile-content__description {
-    margin: 0px 15px 0px 15px;
-}
-
-.profile_content__skills {
+.skills-description {
     color: white;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    font-size: 14px;
-    align-items: flex-end;
+    font-size: .9rem;
+    line-height: 1.6;
 }
 
-.profile-content__category-title {
-    color: var(--text-color);
+.skills-category-grid {
+    display: flex;
+    gap: 2rem;
+}
+
+.skills-category {
+    padding: 1.5rem;
+    border-radius: 12px;
+    background: var(--gray-700);
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, .05);
+}
+
+.skills-category::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: var(--secondary);
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 1rem;
+}
+
+.skills-item {
+    position: relative;
+    background: var(--gray-700);
+    color: white;
+    border-radius: 8px;
+    padding: 1rem;
+    transition: all .3s ease;
+    border: 2px solid transparent;
+    cursor: pointer;
+    overflow: hidden;
+    width: 145px;
+    height: 100px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.05);
+}
+
+.skills-item:hover {
+    transform: translateY(-3px);
+}
+
+.skills-item.html:hover {
+    border-color: #FF6D00;
+}
+
+.skills-item.css:hover {
+    border-color: #039BE5;
+}
+
+.skills-item.typescript:hover {
+    border-color: #1976D2;
+}
+
+.skills-item.javascript:hover {
+    border-color: #FFD600;
+}
+
+.skills-item.svelte:hover {
+    border-color: #EF4823;
+}
+
+.skills-item.csharp:hover {
+    border-color: #69F0AE;
+}
+
+.skills-item.cpp:hover {
+    border-color: #659AD2;
+}
+
+.skills-item.java:hover {
+    border-color: #1565C0;
+}
+
+
+.skills-item.php:hover {
+    border-color: #8B6F9E;
+}
+
+.skills-item.mysql:hover {
+    border-color: #DF781F;
+    /* #00796B */
+}
+
+.skills-item.sqlite:hover {
+    border-color: #72C1EB;
+}
+
+.skills-item.mariadb:hover {
+    border-color: #006064;
+}
+
+.skills-item-content {
+    display: flex;
+    flex-direction: column;
     align-items: center;
+    gap: .75rem;
+    position: relative;
 }
 
-.profile-content__title {
-    color: var(--text-color);
-    font-weight: bold;
+.item-a {
+    order: 1;
 }
 
-.profile-content__category--hidden-mobile {
-    display: flex;
+.item-b {
+    order: 2;
 }
 
-.profile-content__element {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    width: 95%;
-    margin: 0px;
-    color: var(--text-color);
-}
-
-.profile-content__element--hidden-mobile {
-    display: flex;
-    flex-direction: column;
-}
-
-.profile-content__title {
-    font-weight: bold;
-    font-size: 18px;
-    margin-bottom: 2px;
-    margin-top: 6px;
-}
-
-.profile-content__period {
-    margin-left: auto;
-    text-align: right;
-    color: var(--text-color);
-}
-
-.profile-content__institute {
-    color: var(--color-accentBlue);
-    margin-top: 0px;
-    font-size: 14px;
-}
-
-@media only screen and (min-width: 1024px) {
-    .skills {
-        width: 49.7%;
+@media (max-width: 1024px) {
+    .skills-category-grid {
+        display: grid;
+        grid-template-rows: repeat(auto-fill, minmax(120px, 1fr));
+        gap: 1rem;
     }
 
-    .profile-content__institute {
-        font-size: 14px;
+    .item-a {
+        order: 2;
     }
 
-    .profile-content__title {
-        font-size: 18px;
-    }
-
-    .profile_content__skills {
-        font-size: 14px;
-    }
-
-    .person-name {
-        order: -1;
-    }
-
-    .profile-content__category--hidden-mobile {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .profile-content__category--hidden-mobile hr {
-        width: 100%;
-        color: grey;
-    }
-
-    .profile-content__element--hidden-mobile {
-        display: flex;
-    }
-
-    .profile-content__element-header {
-        display: flex;
-        justify-content: space-between;
-        width: 100%;
-        margin-bottom: 0px;
-        color: var(--text-color);
-    }
-
-    .profile-content__period {
-        font-size: 12px;
-        color: var(--text-color);
-        display: flex;
+    .item-b {
+        order: 1;
     }
 }

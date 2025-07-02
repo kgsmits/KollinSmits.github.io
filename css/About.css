@@ -149,6 +149,9 @@
 .skill-card.github:hover {
     border-color: #2dba4e;
 }
+.skill-card.azuredevops:hover {
+    border-color: #0075D1;
+}
 
 .skill-card-img {
     max-height: 38px;
@@ -159,6 +162,10 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 1rem;
+}
+
+.resume-image {
+    display: none;
 }
 
 @media (max-width: 1024px) {
@@ -184,6 +191,12 @@
 
     .image-container {
         display: none;
+    }
+
+    .resume-image {
+        display: inline-flex;
+        float: right;
+        height: 15rem;
     }
 
 }

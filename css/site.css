@@ -256,8 +256,8 @@ button {
         max-width: 100%;
     }
 
-    .RightPanel {
-        width: 100%;
+    .sidePanel.item-b {
+        display: none;
     }
 
     .resume-container {
@@ -327,4 +327,57 @@ span {
 .skillsTitle {
     color: white;
     text-transform: lowercase;
+}
+
+.profile-content__category-title {
+    color: var(--text-color);
+    align-items: center;
+}
+
+.profile-content__title {
+    color: var(--text-color);
+    font-weight: bold;
+}
+
+
+.profile-content__element {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 95%;
+    margin: 0px;
+    color: var(--text-color);
+}
+
+.profile-content__title {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 2px;
+    margin-top: 6px;
+}
+
+@media only screen and (min-width: 1024px) {
+    .profile-content__title {
+        font-size: 18px;
+    }
+
+    .profile-content__element-header {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin-bottom: 0px;
+        color: var(--text-color);
+    }
+
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 2s ease-out, transform 2s ease-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: none;
 }
