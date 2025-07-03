@@ -117,6 +117,14 @@
     border-color: #0ACF83;
 }
 
+.skill-card.wix:hover {
+    border-color: #000000;
+}
+
+.skill-card.shopify:hover {
+    border-color: #7CB342;
+}
+
 .skill-card.scrumpoker:hover {
     border-color: #4E9CB0;
 }
@@ -136,6 +144,7 @@
 .skill-card.github:hover {
     border-color: #2dba4e;
 }
+
 .skill-card.azuredevops:hover {
     border-color: #0075D1;
 }
