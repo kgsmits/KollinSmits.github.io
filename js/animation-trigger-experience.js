@@ -1,8 +1,10 @@
 const experienceObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
-            entry.target.classList.add('animated-dot');
-            experienceObserver.unobserve(entry.target);  
+            setTimeout(() => {
+                entry.target.classList.add('animated-dot');
+                experienceObserver.unobserve(entry.target);
+            }, 3500);
         }
     });
 });

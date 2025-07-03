@@ -252,18 +252,6 @@ button {
 
 }
 
-.LeftPanel {
-    align-content: center;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    padding: 0.5rem;
-    border-right: 1px solid var(--gray-300);
-    border-radius: 8px;
-    font-size: 14px;
-    width: 350px;
-}
-
 @media (min-width: 1025px) {
     .RightPanel {
         position: fixed;

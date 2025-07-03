@@ -55,13 +55,9 @@
     transition: opacity 0.3s ease;
 }
 
-.timeline-dot:hover .tooltip-container .tooltip-box {
+.timeline-dot:hover .tooltip-box {
     visibility: visible;
     opacity: 1;
-}
-
-.tooltip-container:hover .tooltip-box {
-    visibility: visible;
 }
 
 .Tooltip-List {
