@@ -1,19 +1,6 @@
 :root {
-    --color-background: #252424;
-    /*achtergrond*/
-    --color-accentGrey: #70798c;
-    /*randen, secondary text*/
-    --color-accentBlue: #00a8e8;
-    /*hover, links, buttons*/
-    --color-accentDarkBlue: #003459;
-    /*titels, text highlights*/
-    --color-accentGreenBlue: #007ea7;
-    /*subaccent, iconen, subtiele highlights*/
-    --color-accentgreen: #3bc14a;
-    /*succes bevestigingen*/
-    --color-accentDarkerGreen: #4da167;
     --color-text: #ffffff;
-
+    /* Text color */
     --primary: hsl(239, 84%, 67%);
     /* blue  */
     --secondary: hsl(195, 100%, 50%);
@@ -45,7 +32,7 @@ html {
 .btn-link.nav-link:focus,
 .form-control:focus,
 .form-check-input:focus {
-    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem var(--secondaryq);
 }
 
 * {
@@ -101,7 +88,7 @@ nav {
     align-content: center;
     align-items: center;
     color: var(--color-text);
-    border-bottom: 1px solid var(--color-accentGrey);
+    border-bottom: 1px solid var(--gray-300);
     height: 70px;
 }
 
@@ -111,15 +98,15 @@ nav {
 }
 
 .navlink:hover {
-    color: var(--color-accentGreenBlue) !important;
+    color: var(--secondary) !important;
     text-decoration: none;
-    border: solid 1px var(--color-accentGreenBlue);
+    border: solid 1px var(--secondary);
     border-radius: 8px;
 }
 
 .navlink.active {
-    color: var(--color-accentGreenBlue) !important;
-    border: solid 1px var(--color-accentGreenBlue);
+    color: var(--secondary) !important;
+    border: solid 1px var(--secondary);
     border-radius: 8px;
 }
 
@@ -141,7 +128,7 @@ footer {
     padding: 1rem;
     text-align: center;
     color: var(--color-text);
-    border-top: 1px solid var(--color-accentGrey);
+    border-top: 1px solid var(--gray-300);
 }
 
 .footer-div {
@@ -195,7 +182,6 @@ img {
 
 button {
     background-color: var(--secondary);
-    color: var(--color-background);
 }
 
 .page {
@@ -232,7 +218,7 @@ button {
 .divtext {
     align-content: center;
     padding: 0.5rem;
-    border: 1px solid var(--color-accentGrey);
+    border: 1px solid var(--gray-300);
     border-radius: 8px;
     font-size: 14px;
     color: white;
@@ -272,7 +258,7 @@ button {
     display: flex;
     flex-direction: column;
     padding: 0.5rem;
-    border-right: 1px solid var(--color-accentGrey);
+    border-right: 1px solid var(--gray-300);
     border-radius: 8px;
     font-size: 14px;
     width: 350px;
@@ -292,7 +278,7 @@ button {
     display: flex;
     flex-direction: column;
     padding: 0.5rem;
-    border-left: 1px solid var(--color-accentGrey);
+    border-left: 1px solid var(--gray-300);
     border-radius: 8px;
     font-size: 14px;
     width: 350px;
@@ -300,7 +286,7 @@ button {
 
 hr {
     border: none;
-    border-top: 3px solid var(--color-accentGrey);
+    border-top: 3px solid var(--gray-300);
     margin: 1rem 0;
     width: 100%;
 }

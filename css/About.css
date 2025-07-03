@@ -1,19 +1,6 @@
 :root {
-    --color-background: #252424;
-    --color-background2: #3d3c3c;
-    --color-accentGrey: #70798c;
-    --color-accentBlue: #00a8e8;
-    --color-accentDarkBlue: #003459;
-    --color-accentGreenBlue: #007ea7;
-    --color-accentgreen: #3bc14a;
-    --color-accentDarkerGreen: #4da167;
     --color-text: #ffffff;
-    --beginner: 20%;
-    --average: 40%;
-    --good: 60%;
-    --intermediate: 80%;
-    --expert: 100%;
-
+    /* Text color */
     --primary: hsl(239, 84%, 67%);
     /* blue  */
     --secondary: hsl(195, 100%, 50%);
@@ -70,7 +57,7 @@
 }
 
 .about-span {
-    color: var(--color-accentBlue);
+    color: var(--secondary);
     text-transform: uppercase;
     font-size: 3rem;
 }

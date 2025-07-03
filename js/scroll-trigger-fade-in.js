@@ -1,32 +1,32 @@
-const observer = new IntersectionObserver((entries) => {
+const fadeInObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
             entry.target.classList.add('visible');
-            observer.unobserve(entry.target);  
+            fadeInObserver.unobserve(entry.target);  
         }
     });
 });
 
 document.querySelectorAll('.fade-in:not(.visible)').forEach(el => {
-    observer.observe(el);
+    fadeInObserver.observe(el);
 });
 
-const mutationObserver = new MutationObserver(mutations => {
+const mutationFadeInObserver = new MutationObserver(mutations => {
     mutations.forEach(mutation => {
         mutation.addedNodes.forEach(node => {
             if (node.nodeType === 1) {
                 if (node.classList.contains('fade-in') && !node.classList.contains('visible')) {
-                    observer.observe(node);
+                    fadeInObserver.observe(node);
                 }
                 node.querySelectorAll && node.querySelectorAll('.fade-in:not(.visible)').forEach(el => {
-                    observer.observe(el);
+                    fadeInObserver.observe(el);
                 });
             }
         });
     });
 });
 
-mutationObserver.observe(document.body, {
+mutationFadeInObserver.observe(document.body, {
     childList: true,
     subtree: true
 });
