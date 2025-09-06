@@ -159,6 +159,11 @@
     align-items: center;
     margin-bottom: 1rem;
 }
+.home-image {
+    width: 60%;
+    height: auto;
+    border-radius: 8px;
+}
 
 .resume-image {
     display: none;
