@@ -88,6 +88,7 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
+    position: relative;
 }
 
 /* Verticale lijn in het midden */
@@ -138,6 +139,7 @@
 
 /* Lijntjes naast de bolletjes */
 .timeline-dot::after {
+    z-index: -1;
     content: "";
     position: absolute;
     top: 50%;
