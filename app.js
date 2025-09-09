@@ -20,6 +20,10 @@ function router() {
         const age = berekenLeeftijd('2005-02-28');
         const ageElem = document.querySelector('.age li');
         if (ageElem) ageElem.innerHTML = `Age: ${age} `;
+      } else if(path === "/") {
+        const age = berekenLeeftijd('2005-02-28');
+        const ageElem = document.querySelector('.age');
+        if (ageElem) ageElem.innerHTML = `${age} years old`;
       }
     })
     .catch(() => {

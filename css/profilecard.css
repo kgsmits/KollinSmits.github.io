@@ -1,0 +1,72 @@
+:root {
+    --color-text: #ffffff;
+    /* Text color */
+    --primary: hsl(239, 84%, 67%);
+    /* blue  */
+    --secondary: hsl(195, 100%, 50%);
+    /* lightblue */
+    --thirtiary: hsl(0, 0%, 85%);
+    /* gray accent */
+    --background: hsl(230, 60%, 6%);
+    /* Background gradient */
+    --background-accent: hsl(230, 50%, 3%);
+    /* donkerder */
+
+    --gray-300: hsl(230, 10%, 70%);
+    --gray-500: hsl(230, 10%, 50%);
+    --gray-700: hsl(230, 10%, 30%);
+}
+
+.image-display {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--background-accent);
+    color: var(--color-text);
+    border-radius: 8px;
+    height: auto;
+    width: 100%;
+    max-width: 450px;
+}
+
+.image-display::before {
+    z-index: 0;
+    content: "";
+    position: absolute;
+    width: 100%;
+    top: 0;
+    height: 30%;
+    border-radius: 8px;
+    background-color: var(--secondary);
+}
+
+.home-image {
+    margin-top: 15%;
+    z-index: 10;
+    border-radius: 50%;
+    border: 7px solid var(--background-accent);
+    width: 50%;
+}
+
+
+.image-text-row {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    z-index: 10;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 0.9rem;
+    max-width: 100%;
+}
+
+.image-text-item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    z-index: 10;
+    margin: 10px;
+    text-align: center;
+    max-width: 100%;
+}
