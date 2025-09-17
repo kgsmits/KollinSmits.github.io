@@ -17,329 +17,171 @@
     --gray-700: hsl(230, 10%, 30%);
 }
 
-@keyframes borderColorChangDot {
-    0% {
-        border-color: #00bfff;
-    }
-
-    25% {
-        border-color: red;
-    }
-
-    50% {
-        border-color: #00bfff;
-    }
-
-    75% {
-        border-color: red;
-    }
-
-    100% {
-        border-color: #00bfff;
-    }
-}
-
-.animated-dot {
-    animation: borderColorChangDot 3s ease-in-out 1;
-}
-
-@keyframes growLine {
-    from {
-        width: 0;
-    }
-
-    to {
-        width: 6.5rem;
-        /* zelfde als de standaard lijnlengte */
-    }
-}
-
-@keyframes growTimeLine {
-    from {
-        height: 0%;
-    }
-
-    to {
-        height: 450px;
-        /* zelfde als de standaard lijnlengte */
-    }
-}
-
-@keyframes growLineMobile {
-    from {
-        width: 0;
-    }
-
-    to {
-        width: 60px;
-    }
-}
-
-.Experiencepage {
-    display: flex;
-    flex-direction: column;
-    padding: 1rem;
-    align-items: center;
-}
-
-.ExperiencesidePanel {
-    max-width: 450px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    position: relative;
-}
-
-/* Verticale lijn in het midden */
 .timeline {
-    width: 13px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    border-radius: 15px;
-    background: var(--secondary);
-    animation: growTimeLine 4s ease forwards;
-}
-
-/* Timeline items */
-.timeline-item {
     position: relative;
-    width: 100%;
-    margin: 3rem 0;
+    padding: 20px 0;
 }
 
-/* Offset voor zigzag effect */
-.timeline-item.right {
-    top: 1rem;
-}
-
-/* De bolletjes */
-.timeline-dot {
+.timeline::before {
+    content: '';
     position: absolute;
     top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 4px;
+    height: 100%;
+    background: var(--secondary);
+    border-radius: 2px;
+    box-shadow: 0 0 10px rgba(52, 152, 219, 0.3);
+}
+
+.experience-item {
+    position: relative;
+    margin: 30px 0;
+    width: 100%;
+}
+
+.experience-card {
+    background: var(--gray-700);
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    position: relative;
+    width: 45%;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.experience-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+    border-color: var(--secondary);
+}
+
+.experience-item:nth-child(odd) .experience-card {
+    margin-left: 0;
+    margin-right: auto;
+}
+
+.experience-item:nth-child(even) .experience-card {
+    margin-left: auto;
+    margin-right: 0;
+}
+
+.timeline-dot {
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
     width: 20px;
     height: 20px;
-    background-color: var(--color-text);
-    border: 4px solid var(--secondary);
-    border-radius: 50%;
-    z-index: 1;
-}
-
-/* Positie links/rechts bolletjes */
-.timeline-item.left .timeline-dot {
-    left: -95px;
-    transform: translateX(-100%);
-}
-
-.timeline-item.right .timeline-dot {
-    left: 100px;
-    transform: translateX(0);
-}
-
-/* Lijntjes naast de bolletjes */
-.timeline-dot::after {
-    z-index: -1;
-    content: "";
-    position: absolute;
-    top: 50%;
-    width: 0px;
-    height: 6px;
     background: var(--secondary);
-    transform: translateY(-50%);
-    border-radius: 8px;
-    animation: growLine 1s ease forwards;
-}
-
-.timeline-item:nth-child(1) .timeline-dot::after {
-    animation-delay: 0s;
-}
-
-.timeline-item:nth-child(2) .timeline-dot::after {
-    animation-delay: 0.75s;
-}
-
-.timeline-item:nth-child(3) .timeline-dot::after {
-    animation-delay: 1.5s;
-}
-
-.timeline-item:nth-child(4) .timeline-dot::after {
-    animation-delay: 2.25s;
-}
-
-.timeline-item:nth-child(5) .timeline-dot::after {
-    animation-delay: 3s;
-}
-
-.timeline-item.left .timeline-dot::after {
-    left: 100%;
-}
-
-.timeline-item.right .timeline-dot::after {
-    right: 100%;
-}
-
-/* Content blokken */
-.timeline-content {
-    background: transparent;
-    color: var(--color-text);
-    padding: 1rem;
-    border-radius: 10px;
-    width: 250px;
-    position: absolute;
-    top: -10px;
-}
-
-/* Posities content */
-.timeline-item.left .timeline-content {
-    left: -110px;
-    text-align: right;
-    transform: translateX(-100%);
-}
-
-.timeline-item.right .timeline-content {
-    left: 110px;
-    text-align: left;
-    transform: translateX(0);
-}
-
-.timelineheader {
-    display: inline;
-}
-
-/* Responsieve aanpassing: pas toe onder 667px */
-@media screen and (max-width: 1024px) {
-
-    /* Timeline items */
-    .timeline-item {
-        position: relative;
-        width: 100%;
-        margin: 2.5rem 0;
-    }
-
-    /* Offset voor zigzag effect */
-    .timeline-item.right {
-        top: 1rem;
-    }
-
-    /* Positie links/rechts bolletjes */
-    .timeline-item.left .timeline-dot {
-        left: -55px;
-        transform: translateX(-100%);
-    }
-
-    .timeline-item.right .timeline-dot {
-        left: 60px;
-        transform: translateX(0);
-    }
-
-    /* Lijntjes naast de bolletjes */
-    .timeline-dot::after {
-        content: "";
-        position: absolute;
-        top: 50%;
-        width: 0px;
-        height: 4px;
-        background: var(--secondary);
-        transform: translateY(-50%);
-        animation: growLineMobile 1s ease forwards;
-        border-radius: 15px;
-    }
-
-    /* Posities content */
-    .timeline-item.left .timeline-content {
-        margin-top: 10px;
-        left: -0px;
-        text-align: right;
-        transform: translateX(-100%);
-    }
-
-    .timeline-item.right .timeline-content {
-        margin-top: 10px;
-        left: 10px;
-        text-align: left;
-        transform: translateX(0);
-    }
-
-    /* experience text */
-    .timeline-content {
-        background: transparent;
-        color: var(--color-text);
-        padding: 1rem;
-        border-radius: 10px;
-        width: 200px;
-        position: absolute;
-        top: -10px;
-    }
-
-    .experiencepagestyle {
-        align-items: center;
-        display: flex;
-        flex-direction: column;
-        padding: 1rem;
-        gap: 0px;
-    }
-
-    .experiencePanel {
-        display: none;
-    }
-}
-
-.companyspan {
-    font-weight: normal;
-    top: -20px;
-    position: relative;
-}
-
-.experiencepagestyle {
-    display: flex;
-    padding: 1rem;
-    gap: 137px;
-}
-
-.LeftPanel {
-    align-content: center;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    padding: 0.5rem;
-    border-right: 1px solid var(--gray-300);
-    border-radius: 8px;
-    font-size: 14px;
-    width: 350px;
-}
-
-.experienceList {
-    list-style: none;
-    position: relative;
-    padding-left: 10px;
-    font-size: 18px;
-}
-
-.experienceList li {
-    position: relative;
-    padding-left: 25px;
-}
-
-.experienceList li::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0.3em;
-    width: 12px;
-    height: 12px;
-    border: 2px solid var(--color-text);
     border-radius: 50%;
-    background-color: transparent;
-    box-sizing: border-box;
+    border: 4px solid white;
+    box-shadow: 0 0 0 4px var(--secondary), 0 0 20px rgba(52, 152, 219, 0.3);
+    z-index: 10;
 }
 
-.experienceList li:not(:last-child)::after {
-    content: "";
-    position: absolute;
-    left: 5px;
-    top: 20px;
-    width: 2px;
-    height: 90%;
-    background-color: var(--color-text);
+.company-name {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--color-text);
+    margin-bottom: 8px;
+}
+
+.job-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--secondary);
+    margin-bottom: 10px;
+}
+
+.period {
+    font-size: 0.9rem;
+    color: black;
+    font-weight: 500;
+    margin-bottom: 15px;
+    padding: 5px 12px;
+    background: var(--gray-300);
+    border-radius: 20px;
+    display: inline-block;
+}
+
+.keywords-container {
+    align-items: center;
+    align-items: start;
+    flex-direction: row;
+}
+
+.keywords {
+    font-size: 0.9rem;
+    color: black;
+    font-weight: 500;
+    margin-bottom: 15px;
+    padding: 5px 12px;
+    background: var(--gray-300);
+    border-radius: 20px;
+    display: inline-block;
+}
+
+.description {
+    color: var(--color-text);
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .timeline::before {
+        left: 30px;
+    }
+
+    .experience-card {
+        width: calc(100% - 60px);
+        margin-left: 60px !important;
+        margin-right: 0 !important;
+    }
+
+    .timeline-dot {
+        left: 30px;
+        transform: translateX(-50%);
+    }
+
+    .page-title {
+        font-size: 2rem;
+    }
+}
+
+/* Animatie voor scroll */
+.experience-item {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 0.8s ease forwards;
+}
+
+.experience-item:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.experience-item:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.experience-item:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+.experience-item:nth-child(4) {
+    animation-delay: 0.4s;
+}
+
+.experience-item:nth-child(5) {
+    animation-delay: 0.5s;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
