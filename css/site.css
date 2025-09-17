@@ -3,7 +3,8 @@
     /* Text color */
     --primary: hsl(239, 84%, 67%);
     /* blue  */
-    --secondary: hsl(195, 100%, 50%);
+    /* --secondary: hsl(195, 100%, 50%); */
+    --secondary: hsl(215, 100%, 50%);
     /* lightblue */
     --thirtiary: hsl(0, 0%, 85%);
     /* gray accent */

@@ -1,9 +1,10 @@
 :root {
     --color-text: #ffffff;
-
+    /* Text color */
     --primary: hsl(239, 84%, 67%);
     /* blue  */
-    --secondary: hsl(195, 100%, 50%);
+    /* --secondary: hsl(195, 100%, 50%); */
+    --secondary: hsl(215, 100%, 50%);
     /* lightblue */
     --thirtiary: hsl(0, 0%, 85%);
     /* gray accent */
@@ -11,7 +12,6 @@
     /* Background gradient */
     --background-accent: hsl(230, 50%, 3%);
     /* donkerder */
-
     --gray-300: hsl(230, 10%, 70%);
     --gray-500: hsl(230, 10%, 50%);
     --gray-700: hsl(230, 10%, 30%);
@@ -126,7 +126,7 @@
 
 .keywords {
     font-size: 0.9rem;
-    color: black;
+    color: yellow;
     font-weight: 500;
     margin-bottom: 15px;
     padding: 5px 12px;
