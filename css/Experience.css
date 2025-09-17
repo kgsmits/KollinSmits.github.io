@@ -17,6 +17,17 @@
     --gray-700: hsl(230, 10%, 30%);
 }
 
+.experiencepagestyle {
+    align-items: center;
+    flex-direction: column;
+}
+
+.page-title {
+    text-align: center;
+    margin-bottom: 50px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
 .timeline {
     position: relative;
     padding: 20px 0;
