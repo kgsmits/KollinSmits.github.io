@@ -101,8 +101,6 @@ nav {
 .navlink:hover,
 .navlink.active {
     color: var(--secondary) !important;
-    border: solid 1px var(--secondary);
-    border-radius: 8px;
 }
 
 ul {
