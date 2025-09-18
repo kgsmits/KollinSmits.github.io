@@ -56,7 +56,7 @@
     background: var(--gray-700);
     border-radius: 15px;
     padding: 25px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.05);
     position: relative;
     width: 45%;
     transition: all 0.3s ease;
@@ -109,11 +109,11 @@
 
 .period {
     font-size: 0.9rem;
-    color: black;
+    color: var(--gray-700);
     font-weight: 500;
     margin-bottom: 15px;
     padding: 5px 12px;
-    background: var(--gray-300);
+    background: var(--gray-500);
     border-radius: 20px;
     display: inline-block;
 }
@@ -126,11 +126,11 @@
 
 .keywords {
     font-size: 0.9rem;
-    color: yellow;
+    color: white;
     font-weight: 500;
-    margin-bottom: 15px;
+    margin-top: 15px;
     padding: 5px 12px;
-    background: var(--gray-300);
+    background: var(--gray-500);
     border-radius: 20px;
     display: inline-block;
 }
