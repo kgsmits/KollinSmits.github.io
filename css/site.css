@@ -171,11 +171,14 @@ img {
     height: 42px;
     margin: 0px;
     border-radius: 0%;
+    border: 3px solid transparent;
 }
 
-.linkimage.github-white {
-    filter: invert(100%) brightness(200%);
+.linkimage:hover {
+    border-color: #0077cc;
+    transform: scale(1.1);
 }
+
 
 button {
     background-color: var(--secondary);
@@ -281,8 +284,9 @@ span {
 }
 
 .links {
+    display: flex;
     flex-direction: row;
-    gap: 15px;
+    gap: 1rem;
     align-items: center;
     justify-content: center;
 }
