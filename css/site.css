@@ -169,14 +169,13 @@ img {
 .linkimage {
     width: 42px;
     height: 42px;
-    margin: 0px;
-    border-radius: 0%;
     border: 3px solid transparent;
+    transition: all .3s ease;
 }
 
 .linkimage:hover {
     border-color: #0077cc;
-    transform: scale(1.1);
+    transform: translateY(-4px);
 }
 
 
