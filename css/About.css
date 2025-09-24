@@ -76,7 +76,7 @@
 }
 
 .skill-card {
-    max-height: 7rem;
+    max-height: 7.3rem;
     min-width: 6rem;
     flex-basis: 16.666667%;
     background-color: var(--gray-700);
