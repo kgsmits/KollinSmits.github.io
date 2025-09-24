@@ -161,12 +161,6 @@
     margin-bottom: 1rem;
 }
 
-.home-image {
-    width: 60%;
-    height: auto;
-    border-radius: 8px;
-}
-
 @media (max-width: 1024px) {
     .about-grid {
         grid-template-rows: 1fr 1fr;
