@@ -64,6 +64,7 @@
 }
 
 
+
 .skill-card-container {
     display: flex;
     flex-wrap: wrap;
@@ -166,10 +167,6 @@
     border-radius: 8px;
 }
 
-.resume-image {
-    display: none;
-}
-
 @media (max-width: 1024px) {
     .about-grid {
         grid-template-rows: 1fr 1fr;
@@ -181,8 +178,8 @@
     }
 
     .about-grid-home {
-        grid-template-rows: 1fr;
         grid-template-columns: 1fr;
+        height: 100%;
     }
 
     .about-grid-skills {
@@ -195,10 +192,14 @@
         display: none;
     }
 
-    .resume-image {
-        display: inline-flex;
-        float: right;
-        height: 15rem;
+    .about-span {
+        color: var(--secondary);
+        text-transform: uppercase;
+        font-size: 2.3rem;
+    }
+
+    .text-light {
+        font-size: 2.3rem;
     }
 
 }

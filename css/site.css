@@ -205,6 +205,13 @@ button {
         gap: 1rem;
         align-items: center;
     }
+        .footer-div {
+            display: flex;
+            color: var(--color-text);
+            justify-content: center;
+            gap: 0;
+            align-items: center;
+        }
 
     section {
         height: fit-content;
