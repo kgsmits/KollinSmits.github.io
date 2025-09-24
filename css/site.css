@@ -256,6 +256,9 @@ button {
         max-width: 100%;
     }
 
+    .footer-text{
+        max-width: 170px;
+    }
 }
 
 @media (min-width: 1025px) {
