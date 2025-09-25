@@ -3,8 +3,8 @@
     /* Text color */
     --primary: hsl(239, 84%, 67%);
     /* blue  */
-    /* --secondary: hsl(195, 100%, 50%); */
-    --secondary: hsl(215, 100%, 50%);
+    --secondary: hsl(195, 100%, 50%);
+    /* --secondary: hsl(215, 100%, 50%); */
     /* lightblue */
     --thirtiary: hsl(0, 0%, 85%);
     /* gray accent */
@@ -64,6 +64,7 @@
 }
 
 
+
 .skill-card-container {
     display: flex;
     flex-wrap: wrap;
@@ -75,7 +76,7 @@
 }
 
 .skill-card {
-    max-height: 7rem;
+    max-height: 7.3rem;
     min-width: 6rem;
     flex-basis: 16.666667%;
     background-color: var(--gray-700);
@@ -86,10 +87,9 @@
     padding: 1rem;
     height: 130px;
     align-items: center;
-    transition: all .3s;
     border-radius: 8px;
     transition: all .3s ease;
-    border: 2px solid transparent;
+    border: 3px solid transparent;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, .2);
     cursor: pointer;
 }
@@ -119,7 +119,7 @@
 }
 
 .skill-card.wix:hover {
-    border-color: #000000;
+    border-color: #ffffff;
 }
 
 .skill-card.shopify:hover {
@@ -161,16 +161,6 @@
     margin-bottom: 1rem;
 }
 
-.home-image {
-    width: 60%;
-    height: auto;
-    border-radius: 8px;
-}
-
-.resume-image {
-    display: none;
-}
-
 @media (max-width: 1024px) {
     .about-grid {
         grid-template-rows: 1fr 1fr;
@@ -182,8 +172,8 @@
     }
 
     .about-grid-home {
-        grid-template-rows: 1fr;
         grid-template-columns: 1fr;
+        height: 100%;
     }
 
     .about-grid-skills {
@@ -196,10 +186,14 @@
         display: none;
     }
 
-    .resume-image {
-        display: inline-flex;
-        float: right;
-        height: 15rem;
+    .about-span {
+        color: var(--secondary);
+        text-transform: uppercase;
+        font-size: 2.3rem;
+    }
+
+    .text-light {
+        font-size: 2.3rem;
     }
 
 }

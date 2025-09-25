@@ -3,8 +3,8 @@
     /* Text color */
     --primary: hsl(239, 84%, 67%);
     /* blue  */
-    /* --secondary: hsl(195, 100%, 50%); */
-    --secondary: hsl(215, 100%, 50%);
+    --secondary: hsl(195, 100%, 50%);
+    /* --secondary: hsl(215, 100%, 50%); */
     /* lightblue */
     --thirtiary: hsl(0, 0%, 85%);
     /* gray accent */
@@ -72,7 +72,7 @@ main {
     flex: 1;
     display: flex;
     flex-direction: column;
-    background: linear-gradient(135deg, var(--background) 0%, var(--background) 50%, hsla(239, 84%, 67%, 0.1) 100%);
+    background: var(--background);
     color: var(--color-text);
 }
 
@@ -169,13 +169,15 @@ img {
 .linkimage {
     width: 42px;
     height: 42px;
-    margin: 0px;
-    border-radius: 0%;
+    border: 3px solid transparent;
+    transition: all .3s ease;
 }
 
-.linkimage.github-white {
-    filter: invert(100%) brightness(200%);
+.linkimage:hover {
+    border-color: #0077cc;
+    transform: translateY(-4px);
 }
+
 
 button {
     background-color: var(--secondary);
@@ -203,6 +205,13 @@ button {
         gap: 1rem;
         align-items: center;
     }
+        .footer-div {
+            display: flex;
+            color: var(--color-text);
+            justify-content: center;
+            gap: 0;
+            align-items: center;
+        }
 
     section {
         height: fit-content;
@@ -247,6 +256,9 @@ button {
         max-width: 100%;
     }
 
+    .footer-text{
+        max-width: 170px;
+    }
 }
 
 @media (min-width: 1025px) {
@@ -281,8 +293,9 @@ span {
 }
 
 .links {
+    display: flex;
     flex-direction: row;
-    gap: 15px;
+    gap: 1rem;
     align-items: center;
     justify-content: center;
 }
