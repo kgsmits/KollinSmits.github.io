@@ -35,7 +35,11 @@
     padding: 0 1rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 2.5rem;
+    justify-content: space-between;
+}
+
+.about-grid-home > :last-child {
+    justify-self: end;
 }
 
 .about-grid-skills {
@@ -48,7 +52,7 @@
 }
 
 .about-text-container {
-    max-width: 500px;
+    max-width: 600px;
 }
 
 .about-container {
