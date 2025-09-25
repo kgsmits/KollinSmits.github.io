@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="Content-Security-Policy" content="
         default-src 'self';
-        script-src 'self' https://cdn.jsdelivr.net;
+        script-src 'self' https://cdn.jsdelivr.net https://*.google-analytics.com https://www.googletagmanager.com;
         style-src 'self' https://cdn.jsdelivr.net;
         font-src 'self' https://cdn.jsdelivr.net;
-        img-src 'self' data:;
-        connect-src 'self' https://cdn.jsdelivr.net;
+        img-src 'self' data: https://*.google-analytics.com;
+        connect-src 'self' https://cdn.jsdelivr.net https://*.google-analytics.com;
         object-src 'none';
         base-uri 'self';
     ">
@@ -32,6 +32,12 @@
     <link rel="stylesheet" href="./css/About.css" asp-append-version="true" />
     <link rel="stylesheet" href="./css/profilecard.css" asp-append-version="true" />
     <link rel="icon" type="image/x-icon" href="/content/icons/favicon.png">
+
+    <!-- Google tag (gtag.js) -->
+    <script  src="https://www.googletagmanager.com/gtag/js?id=G-E9K497RR9X"></script>
+    <script  src="./js/analytics.js" defer></script>
+
+    
 </head>
 
 <body>
