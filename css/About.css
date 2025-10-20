@@ -67,8 +67,6 @@
     font-size: 3rem;
 }
 
-
-
 .skill-card-container {
     display: flex;
     flex-wrap: wrap;
@@ -167,8 +165,17 @@
 
 @media (max-width: 1024px) {
     .about-grid {
-        grid-template-rows: 1fr 1fr;
-        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        grid-template-columns: auto;
+        gap: 0;
+    }
+
+    .skill-card-container {
+        padding: 0;
+    }
+    .web-design-text{
+        height: fit-content;
+        margin-bottom: 0;
     }
 
     .about-text-container {
