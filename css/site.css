@@ -138,6 +138,10 @@ footer {
     align-items: center;
 }
 
+#year {
+    font-size: 14px;
+}
+
 h2 {
     font-size: 3rem;
     font-weight: 800;
