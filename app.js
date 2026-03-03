@@ -42,6 +42,9 @@ function berekenLeeftijd(geboortedatum) {
   return leeftijd;
 }
 
+document.getElementById("year").textContent = new Date().getFullYear();
+
+
 function setActiveNav() {
   const currentHash = location.hash || "#/";
   const links = document.querySelectorAll(".nav-link");
