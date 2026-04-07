@@ -12,19 +12,5 @@ function berekenLeeftijd(geboortedatum) {
 
 document.getElementById("year").textContent = new Date().getFullYear();
 
-
-function setActiveNav() {
-  const currentHash = location.hash || "#/";
-  const links = document.querySelectorAll(".nav-link");
-  links.forEach(link => {
-    const route = link.getAttribute("href");
-    if (route === currentHash) {
-      link.classList.add("active");
-    } else {
-      link.classList.remove("active");
-    }
-  });
-}
-
-window.addEventListener("hashchange", setActiveNav);
-window.addEventListener("DOMContentLoaded", setActiveNav);
+const ageElement = document.querySelector(".age");
+if (ageElement) ageElement.textContent = `${berekenLeeftijd('2005-02-28')} years old`;
