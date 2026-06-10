@@ -44,6 +44,27 @@
     border: 3px solid transparent;
 }
 
+.experience-card-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 8px;
+}
+
+.experience-card-logo {
+    width: 52px;
+    height: 52px;
+    object-fit: contain;
+    border-radius: 6px;
+    border: none;
+    background-color: white;
+    flex-shrink: 0;
+}
+
+.experience-card-header .company-name {
+    margin-bottom: 0;
+}
+
 .experience-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
