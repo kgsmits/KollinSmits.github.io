@@ -142,6 +142,139 @@
     line-height: 1.6;
 }
 
+.edu-details {
+    margin-top: 6px;
+}
+
+.edu-details summary {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 5px 0;
+    color: var(--color-text);
+    font-size: 0.9rem;
+    list-style: none;
+    user-select: none;
+}
+
+.edu-details summary::-webkit-details-marker {
+    display: none;
+}
+
+.edu-details summary::after {
+    content: '▼';
+    font-size: 0.65rem;
+    color: var(--gray-300);
+    transition: transform 0.2s ease;
+}
+
+.edu-details[open] summary::after {
+    transform: rotate(180deg);
+}
+
+.edu-badge {
+    background: hsl(195, 100%, 45%);
+    color: #fff;
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 2px 10px;
+    border-radius: 20px;
+    white-space: nowrap;
+}
+
+.edu-content {
+    padding: 0.75rem 0 0.5rem;
+}
+
+.edu-content p {
+    font-size: 0.85rem;
+    color: var(--gray-300);
+    margin-bottom: 0.5rem;
+}
+
+.semester-legend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 0.5rem;
+}
+
+.semester-legend-item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 0.75rem;
+    color: var(--gray-300);
+}
+
+.semester-legend-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 3px;
+    flex-shrink: 0;
+}
+
+.semester-legend-dot.cyan { background: hsl(195, 100%, 45%); }
+.semester-legend-dot.navy { background: hsl(230, 50%, 28%); border: 1px solid var(--gray-500); }
+.semester-legend-dot.pink { background: hsl(320, 75%, 48%); }
+.semester-legend-dot.yellow { background: hsl(48, 100%, 52%); }
+
+.semester-grid {
+    display: grid;
+    grid-template-columns: 60px 1fr 1fr;
+    gap: 6px;
+    margin-top: 0.75rem;
+}
+
+.semester-header {
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--gray-300);
+    padding: 4px;
+}
+
+.semester-year {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--gray-700);
+    border-radius: 8px;
+    padding: 8px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--color-text);
+    text-align: center;
+}
+
+.semester-cell {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 8px;
+    padding: 10px 8px 22px;
+    font-weight: 600;
+    font-size: 0.8rem;
+    min-height: 70px;
+}
+
+.semester-cell.cyan { background: hsl(195, 100%, 45%); color: #000; }
+.semester-cell.navy { background: hsl(230, 50%, 28%); color: #fff; }
+.semester-cell.pink { background: hsl(320, 75%, 48%); color: #fff; }
+.semester-cell.yellow { background: hsl(48, 100%, 52%); color: #000; }
+
+.semester-badge {
+    position: absolute;
+    bottom: 5px;
+    right: 8px;
+    font-size: 0.65rem;
+    font-weight: 700;
+    opacity: 0.75;
+}
+
 .experienceList {
     list-style: none;
     padding: 0;

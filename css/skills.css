@@ -72,6 +72,7 @@
 .skills-item.mysql:hover { border-color: #DF781F; }
 .skills-item.sqlite:hover { border-color: #72C1EB; }
 .skills-item.mariadb:hover { border-color: #006064; }
+.skills-item.postgresql:hover { border-color: #336791; }
 
 .skills-item-content {
     display: flex;
