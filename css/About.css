@@ -1,23 +1,3 @@
-:root {
-    --color-text: #ffffff;
-    /* Text color */
-    --primary: hsl(239, 84%, 67%);
-    /* blue  */
-    --secondary: hsl(195, 100%, 50%);
-    /* --secondary: hsl(215, 100%, 50%); */
-    /* lightblue */
-    --thirtiary: hsl(0, 0%, 85%);
-    /* gray accent */
-    --background: hsl(230, 60%, 6%);
-    /* Background gradient */
-    --background-accent: hsl(230, 50%, 3%);
-    /* donkerder */
-
-    --gray-300: hsl(230, 10%, 70%);
-    --gray-500: hsl(230, 10%, 50%);
-    --gray-700: hsl(230, 10%, 30%);
-}
-
 .about-grid {
     max-width: 1200px;
     margin: 0 auto;
@@ -42,23 +22,8 @@
     justify-self: end;
 }
 
-.about-grid-skills {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 1rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
-}
-
 .about-text-container {
     max-width: 600px;
-}
-
-.about-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 1rem;
 }
 
 .about-span {
@@ -100,67 +65,22 @@
     transform: translateY(-3px);
 }
 
-.skill-card.visualparadigm:hover {
-    border-color: #CB3131;
-}
-
-.skill-card.drawio:hover {
-    border-color: #F08705;
-}
-
-.skill-card.balsamiq:hover {
-    border-color: #AE1C59;
-}
-
-.skill-card.illustrator:hover {
-    border-color: #FF9A00;
-}
-
-.skill-card.figma:hover {
-    border-color: #0ACF83;
-}
-
-.skill-card.wix:hover {
-    border-color: #ffffff;
-}
-
-.skill-card.shopify:hover {
-    border-color: #7CB342;
-}
-
-.skill-card.scrumpoker:hover {
-    border-color: #4E9CB0;
-}
-
-.skill-card.easyretro:hover {
-    border-color: #2467F3;
-}
-
-.skill-card.jira:hover {
-    border-color: #2684FF;
-}
-
-.skill-card.confluence:hover {
-    border-color: #2684FF;
-}
-
-.skill-card.github:hover {
-    border-color: #2dba4e;
-}
-
-.skill-card.azuredevops:hover {
-    border-color: #0075D1;
-}
+.skill-card.visualparadigm:hover { border-color: #CB3131; }
+.skill-card.drawio:hover { border-color: #F08705; }
+.skill-card.balsamiq:hover { border-color: #AE1C59; }
+.skill-card.illustrator:hover { border-color: #FF9A00; }
+.skill-card.figma:hover { border-color: #0ACF83; }
+.skill-card.wix:hover { border-color: #ffffff; }
+.skill-card.shopify:hover { border-color: #7CB342; }
+.skill-card.scrumpoker:hover { border-color: #4E9CB0; }
+.skill-card.easyretro:hover { border-color: #2467F3; }
+.skill-card.jira:hover { border-color: #2684FF; }
+.skill-card.confluence:hover { border-color: #2684FF; }
+.skill-card.github:hover { border-color: #2dba4e; }
+.skill-card.azuredevops:hover { border-color: #0075D1; }
 
 .skill-card-img {
     max-height: 38px;
-}
-
-.image-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 1rem;
 }
 
 @media (max-width: 1024px) {
@@ -173,7 +93,8 @@
     .skill-card-container {
         padding: 0;
     }
-    .web-design-text{
+
+    .web-design-text {
         height: fit-content;
         margin-bottom: 0;
     }
@@ -187,24 +108,11 @@
         height: 100%;
     }
 
-    .about-grid-skills {
-        max-width: 400px;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .image-container {
-        display: none;
-    }
-
     .about-span {
-        color: var(--secondary);
-        text-transform: uppercase;
         font-size: 2.3rem;
     }
 
     .text-light {
         font-size: 2.3rem;
     }
-
 }

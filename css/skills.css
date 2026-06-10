@@ -1,49 +1,3 @@
-:root {
-    --color-text: #ffffff;
-    /* Text color */
-    --primary: hsl(239, 84%, 67%);
-    /* blue  */
-    --secondary: hsl(195, 100%, 50%);
-    /* --secondary: hsl(215, 100%, 50%); */
-    /* lightblue */
-    --thirtiary: hsl(0, 0%, 85%);
-    /* gray accent */
-    --background: hsl(230, 60%, 6%);
-    /* Background gradient */
-    --background-accent: hsl(230, 50%, 3%);
-    /* donkerder */
-
-    --gray-300: hsl(230, 10%, 70%);
-    --gray-500: hsl(230, 10%, 50%);
-    --gray-700: hsl(230, 10%, 30%);
-}
-
-@keyframes borderColorChange {
-    0% {
-        border-color: red;
-    }
-
-    20% {
-        border-color: transparent;
-    }
-
-    40% {
-        border-color: red;
-    }
-
-    60% {
-        border-color: transparent;
-    }
-
-    80% {
-        border-color: red;
-    }
-
-    100% {
-        border-color: transparent;
-    }
-}
-
 .skills-container {
     max-width: 1200px;
     margin: 0 auto;
@@ -105,55 +59,18 @@
     transform: translateY(-3px);
 }
 
-.skills-item.html:hover {
-    border-color: #FF6D00;
-}
-
-.skills-item.css:hover {
-    border-color: #039BE5;
-}
-
-.skills-item.typescript:hover {
-    border-color: #1976D2;
-}
-
-.skills-item.javascript:hover {
-    border-color: #FFD600;
-}
-
-.skills-item.svelte:hover {
-    border-color: #EF4823;
-}
-
-.skills-item.csharp:hover {
-    border-color: #69F0AE;
-}
-
-.skills-item.cpp:hover {
-    border-color: #659AD2;
-}
-
-.skills-item.java:hover {
-    border-color: #1565C0;
-}
-
-
-.skills-item.php:hover {
-    border-color: #8B6F9E;
-}
-
-.skills-item.mysql:hover {
-    border-color: #DF781F;
-    /* #00796B */
-}
-
-.skills-item.sqlite:hover {
-    border-color: #72C1EB;
-}
-
-.skills-item.mariadb:hover {
-    border-color: #006064;
-}
+.skills-item.html:hover { border-color: #FF6D00; }
+.skills-item.css:hover { border-color: #039BE5; }
+.skills-item.typescript:hover { border-color: #1976D2; }
+.skills-item.javascript:hover { border-color: #FFD600; }
+.skills-item.svelte:hover { border-color: #EF4823; }
+.skills-item.csharp:hover { border-color: #69F0AE; }
+.skills-item.cpp:hover { border-color: #659AD2; }
+.skills-item.java:hover { border-color: #1565C0; }
+.skills-item.php:hover { border-color: #8B6F9E; }
+.skills-item.mysql:hover { border-color: #DF781F; }
+.skills-item.sqlite:hover { border-color: #72C1EB; }
+.skills-item.mariadb:hover { border-color: #006064; }
 
 .skills-item-content {
     display: flex;

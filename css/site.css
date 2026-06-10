@@ -1,17 +1,8 @@
 :root {
     --color-text: #ffffff;
-    /* Text color */
-    --primary: hsl(239, 84%, 67%);
-    /* blue  */
     --secondary: hsl(195, 100%, 50%);
-    /* --secondary: hsl(215, 100%, 50%); */
-    /* lightblue */
-    --thirtiary: hsl(0, 0%, 85%);
-    /* gray accent */
     --background: hsl(230, 60%, 6%);
-    /* Background gradient */
     --background-accent: hsl(230, 50%, 3%);
-    /* donkerder */
 
     --gray-300: hsl(230, 10%, 70%);
     --gray-500: hsl(230, 10%, 50%);
@@ -35,7 +26,7 @@ html {
 .btn-link.nav-link:focus,
 .form-control:focus,
 .form-check-input:focus {
-    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem var(--secondaryq);
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem var(--secondary);
 }
 
 * {
@@ -53,7 +44,6 @@ body {
 }
 
 @media screen and (max-width: 1024px) {
-
     html,
     body {
         margin: 0;
@@ -61,7 +51,6 @@ body {
         display: flex;
         flex-direction: column;
     }
-
 }
 
 body {
@@ -74,7 +63,6 @@ main {
     flex: 1;
     display: flex;
     flex-direction: column;
-    background: var(--background);
     background-color: var(--background);
     color: var(--color-text);
 }
@@ -99,7 +87,6 @@ nav {
     text-decoration: none;
     border: solid 1px transparent;
     border-radius: 8px;
-
 }
 
 .navlink:hover,
@@ -113,14 +100,9 @@ ul {
     max-width: 100%;
 }
 
-
 section {
     height: fit-content;
     padding: 4rem 0;
-}
-
-div {
-    display: block;
 }
 
 footer {
@@ -155,7 +137,6 @@ h3 {
     text-transform: uppercase;
 }
 
-
 label,
 h4,
 h5,
@@ -187,7 +168,6 @@ img {
     transform: translateY(-4px);
 }
 
-
 button {
     background-color: var(--secondary);
 }
@@ -214,21 +194,20 @@ button {
         gap: 1rem;
         align-items: center;
     }
-        .footer-div {
-            display: flex;
-            color: var(--color-text);
-            justify-content: center;
-            gap: 0;
-            align-items: center;
-        }
+
+    .footer-div {
+        display: flex;
+        color: var(--color-text);
+        justify-content: center;
+        gap: 0;
+        align-items: center;
+    }
 
     section {
         height: fit-content;
         padding-top: 1rem;
     }
 }
-
-
 
 .divtext {
     align-content: center;
@@ -240,7 +219,7 @@ button {
     margin-bottom: 10px;
 }
 
-.sidePanel {
+.side-panel {
     max-width: 450px;
 }
 
@@ -253,11 +232,11 @@ button {
         width: 100%;
     }
 
-    .sidePanel {
+    .side-panel {
         max-width: 100%;
     }
 
-    .sidePanel.item-b {
+    .side-panel.item-b {
         display: none;
     }
 
@@ -265,20 +244,20 @@ button {
         max-width: 100%;
     }
 
-    .footer-text{
+    .footer-text {
         max-width: 170px;
     }
 }
 
 @media (min-width: 1025px) {
-    .RightPanel {
+    .right-panel {
         position: fixed;
         top: 10;
         z-index: 100;
     }
 }
 
-.RightPanel {
+.right-panel {
     align-content: center;
     align-items: center;
     display: flex;
@@ -317,21 +296,18 @@ span {
     border: none;
 }
 
-.skillsTitle {
-    color: white;
-    text-transform: lowercase;
-}
-
 .profile-content__category-title {
-    color: var(--text-color);
+    color: var(--color-text);
     align-items: center;
 }
 
 .profile-content__title {
-    color: var(--text-color);
+    color: var(--color-text);
     font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 2px;
+    margin-top: 6px;
 }
-
 
 .profile-content__element {
     display: flex;
@@ -339,14 +315,7 @@ span {
     align-items: flex-start;
     width: 95%;
     margin: 0px;
-    color: var(--text-color);
-}
-
-.profile-content__title {
-    font-weight: bold;
-    font-size: 18px;
-    margin-bottom: 2px;
-    margin-top: 6px;
+    color: var(--color-text);
 }
 
 @media only screen and (min-width: 1024px) {
@@ -359,9 +328,8 @@ span {
         justify-content: space-between;
         width: 100%;
         margin-bottom: 0px;
-        color: var(--text-color);
+        color: var(--color-text);
     }
-
 }
 
 .fade-in {
@@ -375,7 +343,6 @@ span {
     transform: none;
 }
 
-/* Algemene scrollbar styling */
 ::-webkit-scrollbar {
     width: 10px;
     height: 10px;
@@ -383,25 +350,20 @@ span {
 
 ::-webkit-scrollbar-track {
     background: var(--background-accent);
-    /* Donkere achtergrond */
     border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
     background-color: var(--secondary);
-    /* Lichtblauw duim */
     border-radius: 10px;
     border: 2px solid var(--background-accent);
-    /* Voor 'padding' effect */
 }
 
 ::-webkit-scrollbar-thumb:hover {
     background-color: hsl(195, 100%, 60%);
-    /* Iets lichtere blauw op hover */
 }
 
 * {
     scrollbar-width: thin;
-    /* Dunne scrollbar */
     scrollbar-color: var(--secondary) var(--background-accent);
 }

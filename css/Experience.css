@@ -1,23 +1,4 @@
-:root {
-    --color-text: #ffffff;
-    /* Text color */
-    --primary: hsl(239, 84%, 67%);
-    /* blue  */
-    --secondary: hsl(195, 100%, 50%);
-    /* --secondary: hsl(215, 100%, 50%); */
-    /* lightblue */
-    --thirtiary: hsl(0, 0%, 85%);
-    /* gray accent */
-    --background: hsl(230, 60%, 6%);
-    /* Background gradient */
-    --background-accent: hsl(230, 50%, 3%);
-    /* donkerder */
-    --gray-300: hsl(230, 10%, 70%);
-    --gray-500: hsl(230, 10%, 50%);
-    --gray-700: hsl(230, 10%, 30%);
-}
-
-.experiencepagestyle {
+.experience-page {
     align-items: center;
     flex-direction: column;
 }
@@ -119,7 +100,6 @@
 }
 
 .keywords-container {
-    align-items: center;
     align-items: start;
     flex-direction: row;
 }
@@ -155,21 +135,21 @@
 }
 
 .experienceList li div {
-        justify-content: center;
-        align-items: center;
+    justify-content: center;
+    align-items: center;
 }
-.covey-cert{
+
+.covey-cert {
     background-color: white;
 }
 
 .experienceList img {
-border: #ffffff solid 2px;
+    border: #ffffff solid 2px;
     width: 50px;
     height: 50px;
     object-fit: contain;
 }
 
-/* Responsive design */
 @media (max-width: 768px) {
     .timeline::before {
         left: 30px;
@@ -191,32 +171,17 @@ border: #ffffff solid 2px;
     }
 }
 
-/* Animatie voor scroll */
 .experience-item {
     opacity: 0;
     transform: translateY(30px);
     animation: fadeInUp 0.8s ease forwards;
 }
 
-.experience-item:nth-child(1) {
-    animation-delay: 0.1s;
-}
-
-.experience-item:nth-child(2) {
-    animation-delay: 0.2s;
-}
-
-.experience-item:nth-child(3) {
-    animation-delay: 0.3s;
-}
-
-.experience-item:nth-child(4) {
-    animation-delay: 0.4s;
-}
-
-.experience-item:nth-child(5) {
-    animation-delay: 0.5s;
-}
+.experience-item:nth-child(1) { animation-delay: 0.1s; }
+.experience-item:nth-child(2) { animation-delay: 0.2s; }
+.experience-item:nth-child(3) { animation-delay: 0.3s; }
+.experience-item:nth-child(4) { animation-delay: 0.4s; }
+.experience-item:nth-child(5) { animation-delay: 0.5s; }
 
 @keyframes fadeInUp {
     to {
