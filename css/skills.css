@@ -64,6 +64,7 @@
 .skills-item.typescript:hover { border-color: #1976D2; }
 .skills-item.javascript:hover { border-color: #FFD600; }
 .skills-item.svelte:hover { border-color: #EF4823; }
+.skills-item.react:hover { border-color: #61DAFB; }
 .skills-item.csharp:hover { border-color: #69F0AE; }
 .skills-item.cpp:hover { border-color: #659AD2; }
 .skills-item.java:hover { border-color: #1565C0; }
